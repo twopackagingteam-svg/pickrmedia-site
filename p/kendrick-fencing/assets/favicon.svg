@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kendrick Fencing">
+  <rect width="64" height="64" rx="10" fill="#1C2438"/>
+  <g fill="#B78E66">
+    <rect x="8" y="17" width="48" height="6" rx="1"/>
+    <rect x="12" y="26" width="5" height="4" rx="1"/>
+    <rect x="21" y="26" width="5" height="4" rx="1"/>
+    <rect x="30" y="26" width="5" height="4" rx="1"/>
+    <rect x="39" y="26" width="5" height="4" rx="1"/>
+    <rect x="48" y="26" width="4" height="4" rx="1"/>
+    <rect x="13" y="23" width="7" height="33" rx="1"/>
+    <rect x="44" y="23" width="7" height="33" rx="1"/>
+  </g>
+</svg>

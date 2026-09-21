@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin's Tree Service — Tree Trimming, Hazardous Removal &amp; Storm Damage in Milton, FL</title>
+<meta name="description" content="Kevin's Tree Service — family-owned, licensed and insured, with a certified arborist for tree risk assessments. Trimming, hazardous tree removal, stump grinding, land clearing and storm damage work in Milton, Pace, Pensacola and Destin, FL and Brewton, AL. Free estimates. Call (850) 382-7844.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kevin's Tree Service">
+<meta property="og:title" content="Kevin's Tree Service — Milton, Florida">
+<meta property="og:description" content="Family-owned, licensed and insured. Certified arborist for tree risk assessments. Free estimates. Milton, Pace, Pensacola and Destin, FL · Brewton, AL.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14170E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/hero-oak.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Kevin's Tree Service","description":"Family-owned, licensed and insured. Free estimates. Certified arborist for tree risk assessments.","telephone":"+1-850-382-7844","email":"kevinstree@icloud.com","image":"assets/hero-oak.jpg","address":{"@type":"PostalAddress","streetAddress":"6509 Oakland Dr","addressLocality":"Milton","addressRegion":"FL","postalCode":"32570","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":30.6324149,"longitude":-87.0396881},"areaServed":[{"@type":"City","name":"Milton, FL"},{"@type":"City","name":"Pace, FL"},{"@type":"City","name":"Pensacola, FL"},{"@type":"City","name":"Destin, FL"},{"@type":"City","name":"Brewton, AL"}],"sameAs":["https://www.facebook.com/treeservicemiltonpensacolapacedestinbrewton/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree trimming/pruning"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Hazardous tree removal"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Stump grinding"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lot and land clearing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Brush chipping"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Hazardous assessments"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Storm damage/emergency removal"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Firewood"}}]}}
+</script>
+<style>
+:root{
+  /* every colour sampled from Kevin's own trucks and photos — see design.md */
+  --flame:#F07818;        /* the fleet paint, saturation restored */
+  --flame-deep:#C2500E;   /* same paint in shadow */
+  --flame-ink:#9C3D08;    /* orange dark enough for small text on white */
+  --ember:#FF8A2B;        /* orange light enough for text on bark */
+  --bark:#14170E;         /* live-oak foliage in shade, hero */
+  --bark-2:#1E2316;
+  --bark-3:#282D1D;
+  --moss:#4A4836;         /* mid foliage, hero */
+  --mist:#EFEBE5;         /* morning haze, hero sky */
+  --paper:#FBF8F4;
+  --sand:#C49F73;         /* graded dirt, the land-clearing job */
+  --muted:#5C5847;
+  --line:rgba(20,23,14,.13);
+  --line-d:rgba(239,235,229,.14);
+  --display:'Archivo Black','Arial Black',Impact,sans-serif;
+  --body:'Figtree','Helvetica Neue',Arial,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --max:1220px;
+  --gutter:clamp(18px,4.2vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);color:var(--bark);background:var(--mist);line-height:1.62;font-size:17px;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.022em}
+.wrap{width:min(var(--max),100% - var(--gutter)*2);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.eyebrow{font-family:var(--body);font-weight:800;font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--flame-ink);display:flex;align-items:center;gap:13px;line-height:1.4}
+.eyebrow::before{content:"";flex:0 0 auto;width:26px;height:3px;background:var(--flame)}
+.eyebrow.on-dark{color:var(--ember)}
+.eyebrow.on-flame{color:var(--bark)}
+.eyebrow.on-flame::before{background:var(--bark)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;padding:18px 28px;border:2px solid transparent;border-radius:2px;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s;white-space:nowrap;cursor:pointer;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;flex:0 0 auto}
+.btn-flame{background:var(--flame);color:var(--bark)}          /* dark on orange — 6.2:1 */
+.btn-flame:hover{background:#FF8F33}
+.btn-bark{background:var(--bark);color:var(--mist)}
+.btn-bark:hover{background:#000}
+.btn-ghost-d{border-color:rgba(239,235,229,.5);color:#fff;background:rgba(14,17,9,.5);backdrop-filter:blur(3px)}
+.btn-ghost-d:hover{border-color:var(--mist);background:rgba(14,17,9,.72)}
+.btn-ghost-l{border-color:var(--bark);color:var(--bark)}
+.btn-ghost-l:hover{background:var(--bark);color:var(--mist)}
+
+/* ---------- preview banner ---------- */
+.preview{background:var(--bark);color:var(--mist);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 18px;padding:11px 18px;font-size:13.5px;text-align:center;position:relative;z-index:90}
+.preview strong{font-weight:700}
+.preview a{background:var(--flame);color:var(--bark);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border-radius:2px;transition:background .2s}
+.preview a:hover{background:#FF8F33}
+
+/* ---------- header ---------- */
+.header{position:sticky;top:0;z-index:80;background:rgba(20,23,14,.0);transition:background .35s var(--ease),box-shadow .35s,border-color .35s;border-bottom:1px solid transparent}
+.header.scrolled{background:rgba(20,23,14,.96);backdrop-filter:blur(10px);border-bottom-color:var(--line-d);box-shadow:0 14px 34px rgba(0,0,0,.28)}
+.header-in{display:flex;align-items:center;gap:20px;min-height:78px}
+.brand{display:flex;align-items:center;gap:13px;margin-right:auto;padding:8px 0}
+.brand .mk{width:42px;height:42px;flex:0 0 auto;background:var(--flame);border-radius:3px;display:grid;place-items:center;font-family:var(--display);font-size:21px;color:var(--bark);line-height:1;padding-bottom:2px}
+.brand b{display:block;font-family:var(--display);font-size:17px;letter-spacing:-.02em;color:var(--mist);line-height:1.05;text-transform:uppercase}
+.brand small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin-top:3px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-weight:600;font-size:14.5px;color:var(--mist);opacity:.86;transition:opacity .2s,color .2s;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--flame);transition:right .3s var(--ease)}
+.nav a:hover{opacity:1}
+.nav a:hover::after{right:0}
+.header .btn{padding:14px 20px;font-size:12.5px}
+.tapcall{display:none}
+.burger{display:none;width:46px;height:46px;border:0;background:none;cursor:pointer}
+.burger span{display:block;width:26px;height:2px;background:var(--mist);margin:6px auto;transition:transform .3s,opacity .3s}
+.menu-open .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.mobile-nav{position:fixed;inset:0;z-index:79;background:var(--bark);display:flex;flex-direction:column;justify-content:center;gap:6px;padding:40px var(--gutter);opacity:0;pointer-events:none;transition:opacity .3s}
+.menu-open .mobile-nav{opacity:1;pointer-events:auto}
+.mobile-nav a{font-family:var(--display);font-size:clamp(26px,7vw,40px);color:var(--mist);text-transform:uppercase;padding:9px 0;border-bottom:1px solid var(--line-d)}
+.mobile-nav a:last-of-type{color:var(--ember)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:clamp(560px,86vh,860px);display:flex;flex-direction:column;justify-content:center;margin-top:-79px;padding-top:110px;overflow:hidden;background:var(--bark)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:48% 74%;filter:saturate(1.2) contrast(1.05);animation:kb 26s ease-out forwards}
+@keyframes kb{from{transform:scale(1.085)}to{transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(97deg,rgba(14,17,9,.9) 0%,rgba(14,17,9,.76) 30%,rgba(14,17,9,.4) 55%,rgba(14,17,9,.06) 76%,rgba(14,17,9,.24) 100%),
+  linear-gradient(to top,rgba(14,17,9,.5) 0%,rgba(14,17,9,.1) 16%,rgba(14,17,9,0) 34%),
+  linear-gradient(to bottom,rgba(14,17,9,.6) 0%,rgba(14,17,9,0) 22%)}
+.hero-in{position:relative;z-index:1;padding-block:20px clamp(70px,9vw,130px)}
+.hero-copy{max-width:880px}
+.hero h1{margin:22px 0 0;font-size:clamp(34px,5.1vw,66px);color:var(--mist);text-shadow:0 3px 30px rgba(0,0,0,.6)}
+.hero h1 em{font-style:normal;color:var(--ember);display:block}
+.hero h1 .brk{display:none}
+.hero .eyebrow{text-shadow:0 2px 12px rgba(0,0,0,.9)}
+.hero p.lede{margin-top:22px;max-width:640px;font-size:clamp(16px,1.3vw,18.5px);color:rgba(239,235,229,.94);text-shadow:0 2px 18px rgba(0,0,0,.75)}
+.hero p.lede b{color:#fff;font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+
+/* ---------- trust band ---------- */
+.band{background:var(--flame);color:var(--bark);position:relative;z-index:2}
+.band-in{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.band-in>div{padding:30px 26px 32px;border-left:1px solid rgba(20,23,14,.18)}
+.band-in>div:first-child{border-left:0;padding-left:0}
+.band b{display:block;font-family:var(--display);font-size:clamp(17px,1.5vw,21px);line-height:1.1;text-transform:uppercase;letter-spacing:-.02em}
+.band span{display:block;margin-top:8px;font-size:13.5px;font-weight:600;color:rgba(20,23,14,.78);line-height:1.45}
+
+/* ---------- generic section ---------- */
+.sec{padding:clamp(64px,8.5vw,124px) 0}
+.sec.dark{background:var(--bark);color:var(--mist)}
+.sec.light{background:var(--mist)}
+.sec.paper{background:var(--paper)}
+.sec h2{font-size:clamp(29px,4.1vw,54px);margin-top:20px}
+.sec.dark h2{color:var(--mist)}
+.lead{margin-top:22px;font-size:clamp(16px,1.25vw,18.5px);max-width:62ch}
+.sec.dark .lead{color:rgba(239,235,229,.82)}
+.sec.light .lead,.sec.paper .lead{color:var(--muted)}
+.lead strong{font-weight:700;color:var(--bark)}
+.sec.dark .lead strong{color:var(--ember)}
+
+/* ---------- credential ---------- */
+.cred-top{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(30px,5vw,72px);align-items:center}
+.cred-photo{position:relative}
+.cred-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:52% 6%}
+.cred-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(239,235,229,.18)}
+.cred-photo figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(to top,rgba(14,17,9,.95) 34%,rgba(14,17,9,.7) 62%,transparent);color:var(--sand);font-size:12.5px;font-weight:600;padding:70px 18px 16px}
+.cred-quote{margin-top:30px;border-left:4px solid var(--flame);padding-left:22px}
+.cred-quote b{display:block;font-family:var(--display);font-size:clamp(19px,1.9vw,25px);color:var(--ember);line-height:1.2;text-transform:none}
+.cred-quote small{display:block;margin-top:9px;font-size:12.5px;color:rgba(239,235,229,.6);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:clamp(40px,5vw,68px)}
+.card{background:var(--bark-2);border:1px solid var(--line-d);padding:30px 26px 32px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s var(--ease)}
+.card:hover{border-color:rgba(240,120,24,.55);transform:translateY(-4px)}
+.card .num{font-family:var(--display);font-size:72px;line-height:.8;color:var(--moss);position:absolute;right:16px;top:12px;pointer-events:none;user-select:none}
+.card h3{font-size:19px;color:var(--mist);position:relative;text-transform:uppercase;letter-spacing:-.01em;padding-right:78px}
+.card p{margin-top:12px;font-size:15px;color:rgba(239,235,229,.75);position:relative}
+.storm-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.storm-pair figure{position:relative;overflow:hidden}
+.storm-pair img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .7s var(--ease)}
+.storm-pair figure:hover img{transform:scale(1.04)}
+.storm-pair figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(to top,rgba(14,17,9,.93),transparent);color:rgba(239,235,229,.92);font-size:13px;font-weight:600;padding:40px 18px 15px}
+
+/* ---------- services ---------- */
+.sv-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.svcs{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:clamp(36px,4.5vw,58px)}
+.sv{position:relative;background:var(--paper);border:1px solid var(--line);padding:26px 24px 28px;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.sv:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(20,23,14,.11);border-color:rgba(240,120,24,.5)}
+.sv h3{font-size:19px;text-transform:uppercase;line-height:1.1}
+.sv p{margin-top:10px;font-size:14.5px;color:var(--muted)}
+.sv .tick{width:34px;height:4px;background:var(--flame);margin-bottom:18px}
+.c6{grid-column:span 6}.c4{grid-column:span 4}.c3{grid-column:span 3}
+.sv-stack{grid-column:span 6;display:grid;grid-template-rows:1fr 1fr;gap:16px}
+.sv.photo{padding:0;border:0;background:var(--bark);overflow:hidden}
+.sv.photo img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .8s var(--ease)}
+.sv.photo:hover img{transform:scale(1.045)}
+.sv.photo .cap{position:absolute;left:0;right:0;bottom:0;padding:54px 24px 22px;background:linear-gradient(to top,rgba(14,17,9,.94) 20%,rgba(14,17,9,.35) 62%,transparent)}
+.sv.photo h3{color:var(--mist)}
+.sv.photo p{color:rgba(239,235,229,.82);margin-top:7px}
+
+/* ---------- reach ---------- */
+.sec.flame{background:var(--flame);color:var(--bark)}
+.sec.flame h2{color:var(--bark)}
+.sec.flame .lead{color:rgba(20,23,14,.8)}
+.sec.flame .lead strong{color:var(--bark)}
+.reach{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4.4vw,60px);align-items:start}
+.towns{list-style:none;margin-top:clamp(30px,3.6vw,46px)}
+.towns li{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-top:1px solid rgba(20,23,14,.24)}
+.towns li:last-child{border-bottom:1px solid rgba(20,23,14,.24)}
+.towns b{font-family:var(--display);font-size:clamp(23px,3.1vw,40px);line-height:1;text-transform:uppercase;letter-spacing:-.03em}
+.towns i{font-style:normal;font-weight:800;font-size:12px;letter-spacing:.16em;background:var(--bark);color:var(--flame);padding:5px 9px;border-radius:2px;margin-left:auto;align-self:center}
+.towns li.hq b::after{content:"HQ";font-family:var(--body);font-size:11px;font-weight:800;letter-spacing:.14em;vertical-align:super;margin-left:9px;color:rgba(20,23,14,.6)}
+.reach-side{display:flex;flex-direction:column;gap:18px}
+.map{border:3px solid var(--bark);background:var(--bark);line-height:0}
+.map iframe{width:100%;height:clamp(230px,30vw,320px);border:0;display:block;filter:saturate(.92)}
+.reach-photo{position:relative;line-height:0}
+.reach-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 44%;border:3px solid var(--bark)}
+.reach-photo figcaption{line-height:1.5;font-size:12.5px;font-weight:600;color:rgba(20,23,14,.72);padding-top:10px}
+
+/* ---------- firewood ---------- */
+.wood{display:grid;grid-template-columns:.95fr 1.05fr;align-items:center;gap:clamp(28px,4.5vw,66px)}
+.wood img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 50%}
+.wood h2{font-size:clamp(27px,3.4vw,44px)}
+
+/* ---------- quote ---------- */
+.q-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(34px,5vw,72px);align-items:start}
+.contact-list{list-style:none;margin-top:32px;display:grid;gap:3px}
+.contact-list li{display:flex;gap:15px;align-items:flex-start;padding:15px 0;border-top:1px solid var(--line-d)}
+.contact-list svg{width:20px;height:20px;flex:0 0 auto;color:var(--flame);margin-top:3px}
+.contact-list small{display:block;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin-bottom:3px}
+.contact-list a,.contact-list b{font-size:17px;font-weight:600;color:var(--mist);word-break:break-word}
+.contact-list a{border-bottom:1px solid rgba(240,120,24,.6);transition:color .2s,border-color .2s}
+.contact-list a:hover{color:var(--ember);border-color:var(--ember)}
+.qf{background:var(--bark-2);border:1px solid var(--line-d);padding:clamp(24px,3.3vw,38px)}
+.qf h3{font-size:22px;color:var(--mist);text-transform:uppercase}
+.qf .sub{font-size:14.5px;color:rgba(239,235,229,.7);margin:10px 0 24px}
+.qf label{display:block;font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin:16px 0 7px}
+.qf input,.qf select,.qf textarea{width:100%;background:var(--bark);border:1px solid rgba(239,235,229,.2);color:var(--mist);padding:14px 15px;border-radius:2px;font-size:16px;transition:border-color .2s,box-shadow .2s}
+.qf input:focus,.qf select:focus,.qf textarea:focus{outline:0;border-color:var(--flame);box-shadow:0 0 0 3px rgba(240,120,24,.22)}
+.qf textarea{min-height:112px;resize:vertical}
+.qf .r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qf .r2 label{margin-top:16px}
+.qf .btn{width:100%;margin-top:24px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.fine{margin-top:15px;font-size:13.5px;color:rgba(239,235,229,.65);text-align:center}
+.fine a{color:var(--ember);font-weight:700}
+.sent{display:none;margin-top:14px;background:rgba(240,120,24,.14);border:1px solid rgba(240,120,24,.45);color:var(--mist);font-size:14px;padding:13px 15px;border-radius:2px}
+
+/* ---------- footer ---------- */
+.footer{background:#0C0E07;color:rgba(239,235,229,.72);padding:clamp(48px,6vw,76px) 0 34px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:34px}
+.foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.foot-brand .mk{width:40px;height:40px;background:var(--flame);border-radius:3px;display:grid;place-items:center;font-family:var(--display);font-size:20px;color:var(--bark);line-height:1;padding-bottom:2px}
+.foot-brand b{font-family:var(--display);font-size:16px;color:var(--mist);text-transform:uppercase;letter-spacing:-.02em;line-height:1.1;display:block}
+.foot-brand i{font-style:normal;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);display:block;margin-top:3px}
+.footer h4{font-family:var(--body);font-weight:800;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);margin-bottom:15px}
+.footer ul{list-style:none;display:grid;gap:9px}
+.footer a:hover{color:var(--ember)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;margin-top:44px;padding-top:22px;border-top:1px solid rgba(239,235,229,.12);font-size:13px;color:rgba(239,235,229,.5)}
+.foot-bottom a{color:var(--ember)}
+
+/* ---------- call bar ---------- */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--bark);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -10px 30px rgba(0,0,0,.4);border-top:1px solid var(--line-d)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-weight:800;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;border-radius:2px}
+.callbar .c1{background:var(--flame);color:var(--bark)}
+.callbar .c2{background:rgba(239,235,229,.08);color:var(--mist);border:1px solid rgba(239,235,229,.28)}
+.callbar svg{width:18px;height:18px}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.09s}.reveal[data-d="2"]{transition-delay:.18s}.reveal[data-d="3"]{transition-delay:.27s}.reveal[data-d="4"]{transition-delay:.36s}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .nav,.header .btn.desk{display:none}
+  .burger{display:block}
+  .tapcall{display:inline-flex;width:46px;height:46px;background:var(--flame);color:var(--bark);border-radius:3px;align-items:center;justify-content:center;margin-left:auto}
+  .tapcall svg{width:20px;height:20px}
+  .brand{margin-right:0}
+  .cred-top,.q-grid,.wood{grid-template-columns:1fr}
+  .cred-photo img{aspect-ratio:16/10;object-position:52% 18%}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .reach{grid-template-columns:1fr}
+}
+@media (max-width:920px){
+  .band-in{grid-template-columns:1fr 1fr}
+  .band-in>div{padding:24px 20px;border-left:1px solid rgba(20,23,14,.18);border-top:1px solid rgba(20,23,14,.18)}
+  .band-in>div:nth-child(1),.band-in>div:nth-child(2){border-top:0}
+  .band-in>div:nth-child(odd){border-left:0;padding-left:0}
+  .cards{grid-template-columns:1fr}
+  .card .num{font-size:58px}
+  .c6{grid-column:span 12}.c4,.c3{grid-column:span 6}
+  .sv-stack{grid-column:span 12}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .header-in{min-height:64px;gap:12px}
+  .brand{gap:10px}
+  .brand .mk{width:38px;height:38px;font-size:19px}
+  .brand b{font-size:13px;white-space:nowrap}
+  .brand small{font-size:9.5px;letter-spacing:.16em;margin-top:2px}
+  .tapcall{width:42px;height:42px}
+  .burger{width:42px;height:42px}
+  .burger span{filter:drop-shadow(0 1px 2px rgba(0,0,0,.75))}
+  .hero{margin-top:-65px;padding-top:96px;min-height:clamp(520px,82vh,720px)}
+  .hero-bg img{object-position:36% 52%}
+  .hero-bg::after{background:linear-gradient(180deg,rgba(14,17,9,.62) 0%,rgba(14,17,9,.34) 15%,rgba(14,17,9,.66) 34%,rgba(14,17,9,.78) 60%,rgba(14,17,9,.44) 100%)}
+  .hero .eyebrow{font-size:10.5px;letter-spacing:.17em}
+  .hero .eyebrow::before{width:20px}
+  .hero-cta{gap:10px}
+  .hero-cta .btn{flex:1 1 100%}
+  .band-in{grid-template-columns:1fr}
+  .band-in>div{border-left:0;padding-left:0;border-top:1px solid rgba(20,23,14,.2)}
+  .band-in>div:first-child{border-top:0}
+  .band-in>div:nth-child(2){border-top:1px solid rgba(20,23,14,.2)}
+  .storm-pair,.qf .r2{grid-template-columns:1fr}
+  .c6,.c4,.c3,.sv-stack{grid-column:span 12}
+  .sv-stack{grid-template-rows:auto auto}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .callbar{display:flex}
+  .footer{padding-bottom:104px}
+  .towns i{margin-left:12px}
+}
+@media (max-width:480px){
+  .hero h1 .brk{display:block;height:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-bg img{animation:none}
+  .scrollnote i{animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<div class="preview" role="note">
+  <span>This preview was designed for <strong>Kevin's Tree Service</strong> by Pickr Media.</span>
+  <a href="https://pickrmedia.com/claim/?site=kevins-tree-service">Make it yours →</a>
+</div>
+
+<header class="header" id="top">
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Kevin's Tree Service — home">
+      <span class="mk" aria-hidden="true">K</span>
+      <span><b>Kevin's Tree Service</b><small>Milton, Florida</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#assessments">Assessments</a>
+      <a href="#services">Services</a>
+      <a href="#area">Where we work</a>
+      <a href="#firewood">Firewood</a>
+      <a href="#quote">Contact</a>
+    </nav>
+    <a class="btn btn-flame desk" href="tel:+18503827844">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+      (850) 382-7844
+    </a>
+    <a class="tapcall" href="tel:+18503827844" aria-label="Call Kevin's Tree Service at (850) 382-7844">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+    </a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mnav" aria-label="Mobile">
+  <a href="#assessments">Assessments</a>
+  <a href="#services">Services</a>
+  <a href="#area">Where we work</a>
+  <a href="#firewood">Firewood</a>
+  <a href="#quote">Free estimate</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-oak.jpg" alt="Kevin's Tree Service orange bucket truck with the boom raised into a large live oak, an arborist working from the bucket" width="1500" height="1125" fetchpriority="high">
+  </div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow on-dark">Tree service · Milton, Florida</p>
+      <h1>Some trees<span class="brk"></span> can stay.<em>Some can't.</em></h1>
+      <p class="lede">Kevin's Tree Service is <b>family-owned, licensed and insured</b>, with a <b>certified arborist for tree risk assessments</b>. Trimming, removals, land clearing and storm work — five towns, two states. <b>Free estimates.</b></p>
+      <div class="hero-cta">
+        <a class="btn btn-flame" href="tel:+18503827844">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+          Call (850) 382-7844
+        </a>
+        <a class="btn btn-ghost-d" href="#quote">Get a free estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAND ============ -->
+<section class="band" aria-label="At a glance">
+  <div class="wrap band-in">
+    <div>
+      <b>Five towns,<br>two states</b>
+      <span>Milton, Pace, Pensacola and Destin, FL — and Brewton, AL.</span>
+    </div>
+    <div>
+      <b>Certified<br>arborist</b>
+      <span>A certified arborist for tree risk assessments.</span>
+    </div>
+    <div>
+      <b>Licensed<br>and insured</b>
+      <span>Family-owned, licensed and insured.</span>
+    </div>
+    <div>
+      <b>Free<br>estimates</b>
+      <span>Call (850) 382-7844 or send the form.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE CREDENTIAL ============ -->
+<section class="sec dark" id="assessments">
+  <div class="wrap">
+    <div class="cred-top">
+      <div class="reveal">
+        <p class="eyebrow on-dark">Hazardous assessments</p>
+        <h2>The question<br>before the saw.</h2>
+        <p class="lead">A limb over the roof. A trunk split at the crotch. A crown full of deadwood after a storm blows through. The first thing worth knowing is whether the tree is actually a hazard — and that is a question you want answered by someone qualified to answer it.</p>
+        <p class="lead">Kevin's Tree Service lists <strong>hazardous assessments</strong> among its services, and has a <strong>certified arborist for tree risk assessments</strong>. Not every outfit with a bucket truck can say that.</p>
+        <div class="cred-quote">
+          <b>“Certified arborist for tree risk assessments.”</b>
+          <small>Kevin's Tree Service, in its own words.</small>
+        </div>
+      </div>
+      <figure class="cred-photo reveal" data-d="1">
+        <img src="assets/oak-bucket.jpg" alt="The bucket lifted into the crown of a large oak beside a lawn" loading="lazy" width="563" height="1000">
+        <figcaption>Working the crown of a live oak — the bucket at the top right of the frame.</figcaption>
+      </figure>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <span class="num" aria-hidden="true">01</span>
+        <h3>Hazardous assessments</h3>
+        <p>Whether the tree is a hazard — and to what. The assessment is its own service, not an afterthought.</p>
+      </article>
+      <article class="card reveal" data-d="1">
+        <span class="num" aria-hidden="true">02</span>
+        <h3>Hazardous tree removal</h3>
+        <p>Taking down the trees that can't safely be left standing, in the tight spots where they usually are.</p>
+      </article>
+      <article class="card reveal" data-d="2">
+        <span class="num" aria-hidden="true">03</span>
+        <h3>Storm damage &amp; emergency removal</h3>
+        <p>Snapped pines, trees on houses, blocked drives. Storm damage and emergency removal are on Kevin's service list — call it in.</p>
+      </article>
+    </div>
+
+    <div class="storm-pair reveal">
+      <figure>
+        <img src="assets/tree-down.jpg" alt="A large tree blown down onto the roof of a brick house" loading="lazy" width="1000" height="622">
+        <figcaption>A whole tree down against the house.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/storm-pines.jpg" alt="Pines snapped off partway up their trunks after a storm, seen across a lawn" loading="lazy" width="1000" height="764">
+        <figcaption>Pines snapped off mid-trunk — what a Gulf Coast storm leaves behind.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec light" id="services">
+  <div class="wrap">
+    <div class="sv-head reveal">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h2>Everything<br>on Kevin's list.</h2>
+      </div>
+      <p class="lead" style="margin-top:0;max-width:38ch">From a single limb over the roofline to a whole lot taken back to dirt.</p>
+    </div>
+
+    <div class="svcs">
+      <article class="sv photo c6 reveal">
+        <img src="assets/oak-house.jpg" alt="A large oak in a front yard with the orange bucket truck parked on the street beside it" loading="lazy" width="563" height="1000">
+        <div class="cap"><h3>Hazardous tree removal</h3><p>Big trees in small yards, with a house underneath.</p></div>
+      </article>
+      <article class="sv photo c6 reveal" data-d="1">
+        <img src="assets/lot-clearing.jpg" alt="A skid steer and the orange Kevin's Tree Service chip truck on a graded lot" loading="lazy" width="1000" height="750">
+        <div class="cap"><h3>Lot and land clearing</h3><p>Skid steer, chip truck, and a lot taken back to dirt.</p></div>
+      </article>
+
+      <article class="sv c4 reveal">
+        <div class="tick" aria-hidden="true"></div>
+        <h3>Tree trimming &amp; pruning</h3>
+        <p>Crown work, deadwood, limbs off the roofline.</p>
+      </article>
+      <article class="sv c4 reveal" data-d="1">
+        <div class="tick" aria-hidden="true"></div>
+        <h3>Stump grinding</h3>
+        <p>The last of it taken out below grade.</p>
+      </article>
+      <article class="sv c4 reveal" data-d="2">
+        <div class="tick" aria-hidden="true"></div>
+        <h3>Hazardous assessments</h3>
+        <p>By a certified arborist for tree risk assessments.</p>
+      </article>
+
+      <article class="sv photo c6 reveal">
+        <img src="assets/chipper.jpg" alt="A pickup towing the orange brush chipper on a residential street" loading="lazy" width="1000" height="750">
+        <div class="cap"><h3>Brush chipping</h3><p>The chipper comes with them — brush goes in, nothing is left on the lawn.</p></div>
+      </article>
+      <div class="sv-stack reveal" data-d="1">
+        <article class="sv">
+          <div class="tick" aria-hidden="true"></div>
+          <h3>Storm damage &amp; emergency removal</h3>
+          <p>After the wind comes through.</p>
+        </article>
+        <article class="sv">
+          <div class="tick" aria-hidden="true"></div>
+          <h3>Firewood</h3>
+          <p>Split and stacked — see below.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE REACH ============ -->
+<section class="sec flame" id="area">
+  <div class="wrap">
+    <div class="reach">
+      <div class="reveal">
+        <p class="eyebrow on-flame">Service area</p>
+        <h2>Destin, Florida to<br>Brewton, Alabama.</h2>
+        <p class="lead">Kevin's Tree Service works out of Milton, Florida, and covers four more towns from there: Pace and Pensacola to the west, the Gulf beaches at Destin to the east, and Brewton up across the Alabama line.</p>
+        <ul class="towns">
+          <li class="hq"><b>Milton</b><i>FL</i></li>
+          <li><b>Pace</b><i>FL</i></li>
+          <li><b>Pensacola</b><i>FL</i></li>
+          <li><b>Destin</b><i>FL</i></li>
+          <li><b>Brewton</b><i>AL</i></li>
+        </ul>
+      </div>
+      <div class="reach-side reveal" data-d="1">
+        <div class="map">
+          <iframe title="Map of the Kevin's Tree Service area, from Destin, Florida to Brewton, Alabama, with a marker on Milton, FL" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-87.46%2C30.24%2C-86.26%2C31.26&amp;layer=mapnik&amp;marker=30.6324149%2C-87.0396881"></iframe>
+        </div>
+        <figure class="reach-photo">
+          <img src="assets/crew-truck.jpg" alt="Two Kevin's Tree Service crew members standing beside the orange bucket truck" loading="lazy" width="959" height="958">
+          <figcaption>Two of the crew beside the bucket truck. Family-owned, licensed and insured.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIREWOOD ============ -->
+<section class="sec paper" id="firewood">
+  <div class="wrap wood">
+    <figure class="reveal">
+      <img src="assets/firewood.jpg" alt="A full rack of split, seasoned firewood" loading="lazy" width="1000" height="556">
+    </figure>
+    <div class="reveal" data-d="1">
+      <p class="eyebrow">Firewood</p>
+      <h2>Split, stacked,<br>and seasoned.</h2>
+      <p class="lead">What comes down does not all go through the chipper. Firewood is on Kevin's list too — ask when you call.</p>
+      <div class="hero-cta" style="margin-top:28px">
+        <a class="btn btn-ghost-l" href="tel:+18503827844">Call about firewood</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="sec dark" id="quote">
+  <div class="wrap q-grid">
+    <div class="reveal">
+      <p class="eyebrow on-dark">Free estimates</p>
+      <h2>Tell Kevin<br>about the tree.</h2>
+      <p class="lead">Free estimates on tree work. Where it is, how big it is, and what's underneath it — that's usually enough to start.</p>
+      <ul class="contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+          <div><small>Phone</small><a href="tel:+18503827844">(850) 382-7844</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          <div><small>Email</small><a href="mailto:kevinstree@icloud.com">kevinstree@icloud.com</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><small>Address</small><b>6509 Oakland Dr<br>Milton, FL 32570</b></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <div><small>Facebook</small><a href="https://www.facebook.com/treeservicemiltonpensacolapacedestinbrewton/" rel="noopener" target="_blank">Kevin's Tree Service</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="qf reveal" data-d="1" action="#" method="post" data-form="quote" novalidate>
+      <h3>Request a free estimate</h3>
+      <p class="sub">Family-owned, licensed and insured. Milton, Pace, Pensacola, Destin and Brewton.</p>
+      <div class="r2">
+        <div><label for="q-name">Your name</label><input id="q-name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <label for="q-email">Email</label>
+      <input id="q-email" name="email" type="email" autocomplete="email">
+      <label for="q-service">What do you need?</label>
+      <select id="q-service" name="service">
+        <option>Tree trimming/pruning</option>
+        <option>Hazardous tree removal</option>
+        <option>Stump grinding</option>
+        <option>Lot and land clearing</option>
+        <option>Brush chipping</option>
+        <option>Hazardous assessments</option>
+        <option>Storm damage/emergency removal</option>
+        <option>Firewood</option>
+        <option>Not sure yet</option>
+      </select>
+      <label for="q-msg">Tell them about the tree</label>
+      <textarea id="q-msg" name="message" placeholder="Where is it, roughly how big, and what's underneath it?"></textarea>
+      <div class="hp" aria-hidden="true"><label for="q-web">Website</label><input id="q-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <button class="btn btn-flame" type="submit">Send it
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="fine">Or call <a href="tel:+18503827844">(850) 382-7844</a>.</p>
+      <p class="sent" role="status">This preview isn't wired up to send yet — please call (850) 382-7844 or email kevinstree@icloud.com.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="mk" aria-hidden="true">K</span>
+          <span><b>Kevin's Tree Service</b><i>Milton, Florida</i></span>
+        </div>
+        <p>Family-owned, licensed and insured. Certified arborist for tree risk assessments. Free estimates.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Tree trimming/pruning</a></li>
+          <li><a href="#services">Hazardous tree removal</a></li>
+          <li><a href="#services">Stump grinding</a></li>
+          <li><a href="#services">Lot and land clearing</a></li>
+          <li><a href="#services">Brush chipping</a></li>
+          <li><a href="#assessments">Hazardous assessments</a></li>
+          <li><a href="#assessments">Storm damage/emergency removal</a></li>
+          <li><a href="#firewood">Firewood</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <ul>
+          <li>Milton, FL</li>
+          <li>Pace, FL</li>
+          <li>Pensacola, FL</li>
+          <li>Destin, FL</li>
+          <li>Brewton, AL</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18503827844">(850) 382-7844</a></li>
+          <li><a href="mailto:kevinstree@icloud.com">kevinstree@icloud.com</a></li>
+          <li>6509 Oakland Dr<br>Milton, FL 32570</li>
+          <li><a href="https://www.facebook.com/treeservicemiltonpensacolapacedestinbrewton/" rel="noopener" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Kevin's Tree Service. All rights reserved.</span>
+      <span>Preview by <a href="https://pickrmedia.com" rel="noopener">Pickr Media</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+18503827844">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+    Call now
+  </a>
+  <a class="c2" href="#quote">Free estimate</a>
+</div>
+
+<script>
+(function(){
+  var h=document.querySelector('.header');
+  var onS=function(){h.classList.toggle('scrolled',window.scrollY>40)};
+  window.addEventListener('scroll',onS,{passive:true});onS();
+  var b=document.querySelector('.burger');
+  b.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+  document.querySelectorAll('.mobile-nav a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false')})});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+  var f=document.querySelector('form[data-form="quote"]');
+  f.addEventListener('submit',function(e){e.preventDefault();if(f.website.value)return;if(f.getAttribute('action')==='#'){f.querySelector('.sent').style.display='block';return}f.submit()});
+})();
+</script>
+</body>
+</html>

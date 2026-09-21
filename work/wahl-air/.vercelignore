@@ -1,0 +1,10 @@
+_source
+tools
+*.old.jpg
+assets/img/*.old.jpg
+assets/video/hero-wahl-original.mp4
+BRAND-AND-FACTS.md
+CONTENT.md
+IMAGE-PROMPTS.md
+VIDEO-PROMPTS.md
+.DS_Store

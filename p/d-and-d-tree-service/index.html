@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D&amp;D Tree Service — Tree Work in Stillwater, Oklahoma</title>
+<meta name="description" content="D&amp;D Tree Service, Stillwater OK. Tree services, tree trimming, ice storm damage, shrub removal and good quality wood at good prices. Payne, Tulsa, Lincoln and Oklahoma counties. Open 24 hours. Call (405) 564-3572.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="D&amp;D Tree Service">
+<meta property="og:title" content="D&amp;D Tree Service — Tree Work in Stillwater, Oklahoma">
+<meta property="og:description" content="Tree services, trimming, ice storm damage, shrub removal and good quality wood. Payne, Tulsa, Lincoln and Oklahoma counties. Open 24 hours.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14181A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/hero-bucket-truck.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Saira+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"D&D Tree Service","telephone":"+1-405-564-3572","email":"daviddecker361@yahoo.com","image":"assets/hero-bucket-truck.jpg","address":{"@type":"PostalAddress","streetAddress":"6898 Oak Forrest Cir","addressLocality":"Stillwater","addressRegion":"OK","postalCode":"74074","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":36.1156306,"longitude":-97.0585717},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"areaServed":[{"@type":"City","name":"Stillwater, OK"},{"@type":"AdministrativeArea","name":"Payne County, OK"},{"@type":"AdministrativeArea","name":"Tulsa County, OK"},{"@type":"AdministrativeArea","name":"Lincoln County, OK"},{"@type":"AdministrativeArea","name":"Oklahoma County, OK"}],"sameAs":["https://www.facebook.com/p/DD-Tree-Service-100034329139610/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree services"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree trimming"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ice storm damage"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Shrub removal"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Quality wood"}}]}}
+</script>
+<style>
+:root{
+  --coal:#14181A;        /* truck chassis in shadow / asphalt */
+  --coal2:#1C2124;
+  --paper:#EDE9E1;
+  --deck:#1F535B;        /* "D&D TREE SERVICE" lettering on the truck door */
+  --deck-lt:#3A8C97;
+  --signal:#B4322F;      /* crew hard hat + red lettering on the same door */
+  --signal-dk:#9C2825;   /* the same red, darkened for AA on light grounds */
+  --signal-lt:#E4635C;   /* the same red, lightened for AA on coal */
+  --timber:#8C6E3F;      /* milled cedar, darkened for AA on paper */
+  --steel:#AEB8BE;       /* white truck body in shade */
+  --chip:#C6A87E;        /* wood chips + milled cedar */
+  --chip-lt:#E2D4BC;
+  --sky:#7E92B8;         /* Oklahoma winter sky above the bare oak */
+  --smoke:#5E6468;
+  --line:rgba(20,24,26,.16);
+  --line-d:rgba(237,233,225,.16);
+  --display:'Saira Condensed','Arial Narrow',Impact,sans-serif;
+  --body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --max:1320px;
+  --gutter:clamp(20px,4vw,56px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--coal);font-family:var(--body);font-size:17px;line-height:1.62;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);width:100%}
+h1,h2,h3,.dsp{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.005em}
+.lab{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;line-height:1.4}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:8px;top:8px;z-index:200;background:var(--signal);color:#fff;padding:10px 16px}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+/* hazard tape */
+.hazard{height:10px;background:repeating-linear-gradient(135deg,var(--signal) 0 16px,var(--coal) 16px 32px)}
+.hazard.lt{background:repeating-linear-gradient(135deg,var(--signal) 0 16px,var(--paper) 16px 32px)}
+
+/* preview */
+.preview{background:var(--coal);color:var(--paper);font-size:13.5px;padding:10px var(--gutter);display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;position:relative;z-index:60;border-bottom:1px solid var(--line-d)}
+.preview a{background:var(--signal);color:#fff;font-weight:600;padding:7px 14px;font-size:12.5px;letter-spacing:.02em;white-space:nowrap}
+.preview a:hover{background:#9C2825}
+
+/* header */
+.header{position:sticky;top:0;z-index:50;background:rgba(20,24,26,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-d);color:var(--paper)}
+.header-in{display:flex;align-items:center;gap:28px;height:74px}
+.wordmark{font-family:var(--display);font-weight:900;font-size:27px;text-transform:uppercase;letter-spacing:.005em;line-height:1;display:flex;align-items:center;gap:11px;color:var(--paper);white-space:nowrap}
+.wordmark .amp{color:var(--deck-lt)}
+.wordmark .tick{width:4px;height:26px;background:var(--signal);flex:none}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav a:hover{color:var(--paper);border-color:var(--signal)}
+.header-phone{display:inline-flex;align-items:center;gap:9px;background:var(--signal);color:#fff;padding:11px 17px;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.01em;transition:background .2s}
+.header-phone:hover{background:#9C2825}
+.header-phone svg{width:16px;height:16px;flex:none}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line-d);color:var(--paper);width:46px;height:42px;cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+.tapcall{display:none}
+.mnav{display:none;background:var(--coal2);border-bottom:1px solid var(--line-d)}
+.mnav.open{display:block}
+.mnav a{display:block;padding:15px var(--gutter);color:var(--paper);font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;border-top:1px solid var(--line-d)}
+
+/* ── HERO ─────────────────────────────────────────── */
+.hero{display:grid;grid-template-columns:minmax(0,44fr) minmax(0,56fr);background:var(--coal);color:var(--paper);position:relative}
+.hero::after{content:"";position:absolute;top:0;bottom:0;left:44%;width:3px;background:var(--signal);z-index:3}
+.hero-copy{padding:clamp(36px,3.8vw,54px) clamp(24px,3.4vw,52px) clamp(34px,3.4vw,48px);display:flex;flex-direction:column;justify-content:center;min-height:min(72vh,660px)}
+.hero-copy .inner{max-width:560px;margin-left:auto;width:100%}
+.hero-plate{display:inline-block;border:1px solid var(--line-d);border-left:4px solid var(--deck-lt);padding:7px 12px;color:var(--steel);margin-bottom:26px}
+.hero h1{font-size:clamp(50px,6.6vw,96px);margin-bottom:22px}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2.5px var(--steel);text-stroke:2.5px var(--steel)}
+.hero-rule{height:3px;background:var(--deck-lt);width:86px;margin-bottom:22px}
+.hero-lead{font-size:clamp(16px,1.2vw,18.5px);color:#D5D2CB;max-width:50ch}
+.hero-lead b{color:var(--paper);font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.02em;text-transform:uppercase;padding:15px 24px;transition:background .2s,color .2s,border-color .2s}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-red{background:var(--signal);color:#fff}
+.btn-red:hover{background:#9C2825}
+.btn-out{border:2px solid var(--steel);color:var(--paper)}
+.btn-out:hover{background:var(--paper);color:var(--coal);border-color:var(--paper)}
+.btn-dark{background:var(--coal);color:var(--paper)}
+.btn-dark:hover{background:var(--deck)}
+.hero-hrs{display:flex;align-items:center;gap:10px;margin-top:30px;padding-top:20px;border-top:1px solid var(--line-d);color:var(--steel)}
+.dot{width:9px;height:9px;background:var(--signal);flex:none;animation:pulse 2.6s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero-photo{position:relative;overflow:hidden;background:var(--coal2);min-height:min(72vh,660px)}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 50%;animation:settle 1.6s var(--ease) both}
+@keyframes settle{from{transform:scale(1.07)}to{transform:scale(1)}}
+.hero-tag{position:absolute;left:0;bottom:0;z-index:2;background:var(--coal);color:var(--steel);padding:9px 16px;border-top:2px solid var(--signal)}
+
+/* spec strip */
+.spec{background:var(--coal2);color:var(--paper);border-top:1px solid var(--line-d)}
+.spec-in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.spec-in>div{padding:22px clamp(16px,2vw,28px);border-left:1px solid var(--line-d)}
+.spec-in>div:first-child{border-left:0;padding-left:0}
+.spec .lab{color:var(--steel);margin-bottom:9px}
+.spec .v{font-family:var(--display);font-weight:900;font-size:clamp(23px,2.3vw,33px);text-transform:uppercase;line-height:1.02;letter-spacing:0;white-space:nowrap}
+.spec .v a:hover{color:var(--chip)}
+.spec .v em{font-style:normal;color:var(--chip)}
+
+/* section furniture */
+section{position:relative;overflow:hidden}
+.pad{padding:clamp(64px,7vw,110px) 0}
+.ghost{position:absolute;font-family:var(--display);font-weight:900;font-size:clamp(150px,21vw,300px);line-height:.72;color:rgba(20,24,26,.045);top:-.06em;right:-.03em;pointer-events:none;user-select:none;z-index:0}
+.ghost.d{color:rgba(237,233,225,.05)}
+.shead{position:relative;z-index:1;margin-bottom:clamp(34px,4vw,54px);max-width:840px}
+.shead .lab{color:var(--signal-dk);display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.shead .lab::before{content:"";width:34px;height:2px;background:var(--signal);flex:none}
+.shead h2{font-size:clamp(38px,5.2vw,74px);margin-bottom:18px}
+.shead p{font-size:clamp(16px,1.2vw,18.5px);color:var(--smoke);max-width:62ch}
+.on-dark .shead .lab{color:var(--signal-lt)}
+.on-dark .shead p{color:#C2C6C8}
+.on-dark .ghost{color:rgba(237,233,225,.05)}
+
+/* ── SERVICES ledger ───────────────────────────────── */
+.ledger{position:relative;z-index:1;border-top:2px solid var(--coal)}
+.srow{display:grid;grid-template-columns:76px minmax(0,1fr) minmax(0,1.1fr) 172px;gap:clamp(14px,2vw,30px);align-items:center;padding:20px 0;border-bottom:1px solid var(--line);transition:background .25s}
+.srow:hover{background:rgba(31,83,91,.055)}
+.srow .n{font-family:var(--display);font-weight:900;font-size:40px;color:var(--timber);line-height:1}
+.srow h3{font-size:clamp(26px,2.5vw,36px)}
+.srow .d{color:var(--smoke);font-size:16px;line-height:1.55}
+.srow .d q{quotes:'“' '”';font-style:italic;color:var(--deck);font-weight:500;margin-right:.3em}
+.srow .th{width:172px;height:112px;overflow:hidden;background:var(--coal2)}
+.srow .th img{width:100%;height:100%;object-fit:cover;filter:grayscale(.55) contrast(1.05);transition:filter .3s,transform .5s var(--ease)}
+.srow:hover .th img{filter:none;transform:scale(1.05)}
+
+/* ── STORM ────────────────────────────────────────── */
+.storm{background:var(--coal);color:var(--paper)}
+.storm .ghost{display:none}
+.storm-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.82fr);gap:clamp(30px,5vw,72px);align-items:center;position:relative;z-index:1}
+.storm h2{font-size:clamp(42px,6vw,88px);margin-bottom:24px}
+.storm h2 span{color:var(--sky);display:block}
+.storm p{color:#C8CBCD;font-size:clamp(16px,1.2vw,18.5px);margin-bottom:18px;max-width:52ch}
+.storm p b{color:var(--paper);font-weight:600}
+.storm-hrs{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--line-d);border-left:4px solid var(--signal);padding:14px 18px;margin:8px 0 26px}
+.storm-hrs .big{font-family:var(--display);font-weight:900;font-size:26px;text-transform:uppercase;line-height:1}
+.storm-hrs .lab{color:var(--steel);margin-top:3px}
+.storm-photo{position:relative;margin-left:16px}
+.storm-photo::before{content:"";position:absolute;left:-16px;top:16px;width:100%;height:100%;border:2px solid var(--sky);opacity:.5;pointer-events:none}
+.storm-photo img{position:relative;width:100%;height:auto;aspect-ratio:4/5;max-height:560px;object-fit:cover;object-position:50% 34%}
+.storm-photo figcaption{position:relative;background:var(--coal2);color:var(--steel);padding:11px 15px;border-left:3px solid var(--sky)}
+
+/* ── WOOD ─────────────────────────────────────────── */
+.wood{background:var(--chip-lt)}
+.wood .ghost{color:rgba(20,24,26,.05)}
+.quote-blk{position:relative;z-index:1;max-width:1000px;margin-bottom:clamp(36px,4vw,56px)}
+.quote-blk .qmark{font-family:var(--display);font-weight:900;font-size:clamp(70px,9vw,130px);color:var(--chip);line-height:.6;display:block}
+.quote-blk blockquote{font-family:var(--display);font-weight:900;font-size:clamp(40px,6.2vw,92px);text-transform:uppercase;line-height:.88;color:var(--coal)}
+.quote-blk blockquote em{font-style:normal;color:var(--deck)}
+.quote-blk cite{display:block;font-style:normal;margin-top:20px;color:#4A4A44;font-size:14px;letter-spacing:.06em}
+.wood-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px);position:relative;z-index:1}
+.wood-say{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);margin-bottom:clamp(30px,3.5vw,46px);align-items:start}
+.wood-say p{font-size:clamp(16px,1.2vw,18.5px);color:#4A4A44}
+.wood-say p+p{margin-top:14px}
+.wood-say .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+/* photo tile */
+.tile{position:relative;overflow:hidden;background:var(--coal2)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.tile:hover img{transform:scale(1.045)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 13px;background:linear-gradient(to top,rgba(20,24,26,.94),rgba(20,24,26,.7) 45%,transparent);color:var(--paper);font-size:13.5px;line-height:1.45;font-weight:500}
+.tile.a34 img{height:auto;aspect-ratio:3/4}
+.tile.a11 img{height:auto;aspect-ratio:1/1}
+.tile.a169 img{height:auto;aspect-ratio:16/10}
+
+/* ── WORK grid ────────────────────────────────────── */
+.work-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(12px,1.4vw,20px);position:relative;z-index:1}
+.work-grid>*:nth-child(1),.work-grid>*:nth-child(2),.work-grid>*:nth-child(3){grid-column:span 4}
+.work-grid>*:nth-child(4),.work-grid>*:nth-child(5){grid-column:span 6}
+
+/* ── BEFORE / AFTER ───────────────────────────────── */
+.ba{background:var(--coal);color:var(--paper)}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,22px);position:relative;z-index:1;max-width:980px}
+.ba-fig{position:relative}
+.ba-fig img{width:100%;height:auto;aspect-ratio:82/100;object-fit:cover}
+.ba-fig .stamp{position:absolute;top:0;left:0;background:var(--coal);color:var(--paper);font-family:var(--display);font-weight:900;font-size:clamp(20px,2.2vw,30px);text-transform:uppercase;padding:8px 16px 6px;line-height:1;border-bottom:3px solid var(--signal)}
+.ba-fig.after .stamp{border-bottom-color:var(--deck-lt)}
+.ba-note{margin-top:22px;color:#C2C6C8;position:relative;z-index:1;max-width:58ch}
+
+/* ── AREA ─────────────────────────────────────────── */
+.area-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px);position:relative;z-index:1;align-items:start}
+.counties{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:26px}
+.counties li{list-style:none;border:1px solid var(--line);border-left:4px solid var(--deck);padding:14px 16px;background:#fff}
+.counties .c{font-family:var(--display);font-weight:900;font-size:26px;text-transform:uppercase;line-height:1}
+.counties .lab{color:var(--smoke);margin-top:4px}
+.base{border:1px solid var(--line);border-left:4px solid var(--signal);padding:16px;background:#fff}
+.base .lab{color:var(--smoke);margin-bottom:7px}
+.base .a{font-size:16px;line-height:1.5}
+.map{border:2px solid var(--coal);background:#ddd;line-height:0}
+.map iframe{width:100%;height:clamp(320px,42vw,480px);border:0;display:block}
+.map-cap{background:var(--coal);color:var(--steel);padding:10px 14px;line-height:1.4}
+
+/* ── QUOTE ────────────────────────────────────────── */
+.quote{background:var(--coal);color:var(--paper)}
+.quote-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,4.5vw,70px);position:relative;z-index:1;align-items:start}
+.qf label{display:block;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);margin:16px 0 7px}
+.qf input,.qf select,.qf textarea{width:100%;background:var(--coal2);border:1px solid var(--line-d);color:var(--paper);font-family:var(--body);font-size:16px;padding:13px 14px;border-radius:0}
+.qf input:focus,.qf select:focus,.qf textarea:focus{border-color:var(--signal);outline:none}
+.qf textarea{min-height:118px;resize:vertical}
+.qf .r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qf .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.qf button{margin-top:22px;width:100%;cursor:pointer;border:0}
+.qf .fine{margin-top:14px;font-size:14px;color:var(--steel)}
+.qf .sent{display:none;margin-top:14px;border-left:4px solid var(--signal);background:var(--coal2);padding:13px 15px;font-size:14.5px;color:#D5D2CB}
+.cblock{border-top:2px solid var(--signal);padding-top:22px}
+.cblock dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0}
+.crow{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-d);align-items:flex-start}
+.crow .lab{color:var(--steel);width:92px;flex:none;padding-top:5px}
+.crow .val{font-size:17px;line-height:1.5}
+.crow .val.big{font-family:var(--display);font-weight:900;font-size:30px;text-transform:uppercase;line-height:1}
+.crow .val a:hover{color:var(--chip)}
+
+/* footer */
+.footer{background:var(--coal2);color:var(--steel);padding:clamp(44px,5vw,64px) 0 36px;border-top:1px solid var(--line-d)}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:32px;padding-bottom:30px;border-bottom:1px solid var(--line-d)}
+.footer .wordmark{margin-bottom:14px}
+.footer p{font-size:15px;max-width:42ch}
+.footer h4{font-family:var(--display);font-weight:800;font-size:19px;text-transform:uppercase;color:var(--paper);margin-bottom:12px;letter-spacing:.02em}
+.footer li{list-style:none;margin-bottom:8px;font-size:15px}
+.footer a:hover{color:var(--paper)}
+.fbot{padding-top:24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13px}
+
+/* call bar */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--coal);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -10px 30px rgba(0,0,0,.45);border-top:2px solid var(--signal)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 10px;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.03em;text-transform:uppercase}
+.callbar .c1{background:var(--signal);color:#fff}
+.callbar .c2{background:rgba(237,233,225,.1);color:var(--paper);border:1px solid var(--line-d)}
+.callbar svg{width:18px;height:18px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.09s}
+.reveal[data-d="2"]{transition-delay:.18s}
+.reveal[data-d="3"]{transition-delay:.27s}
+
+/* ── responsive ───────────────────────────────────── */
+@media (max-width:1100px){
+  .nav{display:none}
+  .header-phone{display:none}
+  .burger{display:flex}
+  .tapcall{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;background:var(--signal);color:#fff;width:46px;height:42px}
+  .tapcall+.burger{margin-left:8px}
+  .tapcall svg{width:18px;height:18px}
+}
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .hero::after{display:none}
+  .hero-photo{min-height:0;order:-1}
+  .hero-photo img{position:relative;aspect-ratio:16/10;height:auto;object-position:44% 50%}
+  .hero-copy{min-height:0;padding:40px var(--gutter) 44px;border-top:3px solid var(--signal)}
+  .hero h1{font-size:clamp(52px,9vw,86px)}
+  .hero-copy .inner{margin-left:0;max-width:none}
+  .storm-grid,.wood-say,.area-grid,.quote-grid{grid-template-columns:1fr}
+  .storm-photo{margin-left:0}
+  .storm-photo::before{display:none}
+  .storm-photo img{aspect-ratio:16/10;max-height:none;object-position:50% 26%}
+  .work-grid>*:nth-child(1),.work-grid>*:nth-child(2),.work-grid>*:nth-child(3){grid-column:span 6}
+  .work-grid>*:nth-child(4),.work-grid>*:nth-child(5){grid-column:span 6}
+  .work-grid>*:nth-child(3){grid-column:span 12}
+  .work-grid>*:nth-child(3) img{height:auto;aspect-ratio:16/10}
+}
+@media (max-width:760px){
+  .spec-in{grid-template-columns:1fr 1fr}
+  .spec-in>div:nth-child(3),.spec-in>div:nth-child(4){border-top:1px solid var(--line-d)}
+  .spec-in>div:nth-child(odd){border-left:0;padding-left:0}
+  .spec .v{font-size:22px}
+  .srow{grid-template-columns:44px minmax(0,1fr);gap:12px 14px;padding:18px 0}
+  .srow .n{font-size:30px}
+  .srow .d{grid-column:2}
+  .srow .th{display:none}
+  .wood-grid{grid-template-columns:1fr 1fr}
+  .wood-grid>*:first-child{grid-column:span 2}
+  .wood-grid>*:first-child img{height:auto;aspect-ratio:16/10}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .preview{font-size:12.5px;padding:9px 14px;gap:9px}
+  .preview a{padding:6px 11px;font-size:12px}
+  .header-in{height:64px}
+  .wordmark{font-size:21px;gap:8px}
+  .wordmark .tick{height:20px;width:3px}
+  .hero h1{font-size:clamp(44px,13.5vw,68px)}
+  .hero h1 .o{-webkit-text-stroke-width:2px}
+  .hero-actions .btn{width:100%}
+  .counties{grid-template-columns:1fr}
+  .work-grid>*{grid-column:span 12!important}
+  .ba-grid{grid-template-columns:1fr}
+  .qf .r2{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .callbar{display:flex}
+  .footer{padding-bottom:124px}
+  .ghost{font-size:clamp(120px,32vw,180px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero-photo img{animation:none;transform:none}
+  .dot{animation:none}
+  .tile:hover img,.srow:hover .th img{transform:none}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview" role="note">
+  <span>This preview was designed for <strong>D&amp;D Tree Service</strong> by Pickr Media.</span>
+  <a href="https://pickrmedia.com/claim/?site=d-and-d-tree-service">Make it yours →</a>
+</div>
+
+<header class="header" id="top">
+  <div class="wrap header-in">
+    <a class="wordmark" href="#top" aria-label="D&amp;D Tree Service — home">
+      <span class="tick" aria-hidden="true"></span>
+      <span>D<span class="amp">&amp;</span>D Tree Service</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">What we do</a>
+      <a href="#storm">Ice storms</a>
+      <a href="#wood">Wood</a>
+      <a href="#work">Work</a>
+      <a href="#area">Where we work</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="header-phone" href="tel:+14055643572">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+      (405) 564-3572
+    </a>
+    <a class="tapcall" href="tel:+14055643572" aria-label="Call (405) 564-3572">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Mobile">
+    <a href="#services">What we do</a>
+    <a href="#storm">Ice storms</a>
+    <a href="#wood">Wood</a>
+    <a href="#work">Work</a>
+    <a href="#area">Where we work</a>
+    <a href="#quote">Get a quote</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ▸ HERO — split: stencil type | the bucket truck -->
+<section class="hero">
+  <div class="hero-copy">
+    <div class="inner">
+      <span class="hero-plate lab">Payne · Tulsa · Lincoln · Oklahoma counties</span>
+      <h1>Tree work.<br>Stillwater,<br><span class="o">Oklahoma.</span></h1>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <p class="hero-lead">Tree services and trimming, <b>ice storm damage</b>, shrub removal — and good quality wood at good prices. The number on the truck is the number that rings.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="tel:+14055643572">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+          (405) 564-3572
+        </a>
+        <a class="btn btn-out" href="#quote">Get a quote</a>
+      </div>
+      <div class="hero-hrs">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="lab">Open 24 hours</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="assets/hero-bucket-truck.jpg" width="1700" height="957" fetchpriority="high" decoding="async"
+         alt="The D&amp;D Tree Service bucket truck, lettered with the phone number, with two crew members standing on it under a bare oak.">
+    <span class="hero-tag lab">The truck · Stillwater, OK</span>
+  </div>
+</section>
+
+<!-- ▸ SPEC STRIP -->
+<div class="spec">
+  <div class="wrap spec-in">
+    <div>
+      <div class="lab">Call</div>
+      <div class="v"><a href="tel:+14055643572">(405)&nbsp;564-3572</a></div>
+    </div>
+    <div>
+      <div class="lab">Hours</div>
+      <div class="v"><em>Open</em> 24 hours</div>
+    </div>
+    <div>
+      <div class="lab">Based in</div>
+      <div class="v">Stillwater, OK</div>
+    </div>
+    <div>
+      <div class="lab">Service area</div>
+      <div class="v">Four counties</div>
+    </div>
+  </div>
+</div>
+<div class="hazard" aria-hidden="true"></div>
+
+<!-- ▸ 01 WHAT WE DO -->
+<section class="pad" id="services">
+  <span class="ghost" aria-hidden="true">01</span>
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="lab">01 — What we do</span>
+      <h2>Five things,<br>done with a bucket<br>truck and a chipper.</h2>
+      <p>No list of thirty services. This is the work that goes on the truck in the morning.</p>
+    </div>
+
+    <div class="ledger">
+      <div class="srow reveal">
+        <div class="n">01</div>
+        <h3>Tree services</h3>
+        <p class="d">Whole trees, taken down in sections — from the bucket, or roped in from the crown.</p>
+        <div class="th"><img src="assets/work-sections.jpg" style="object-position:50% 28%" alt="Looking down from the bucket at a trunk being taken down in sections." loading="lazy" decoding="async" width="780" height="1274"></div>
+      </div>
+      <div class="srow reveal">
+        <div class="n">02</div>
+        <h3>Tree trimming</h3>
+        <p class="d">Crown work and limb removal, reached off the bucket truck or climbed.</p>
+        <div class="th"><img src="assets/work-climber.jpg" alt="A climber roped into the crown of a large tree beside a metal-roofed building." loading="lazy" decoding="async" width="780" height="1274"></div>
+      </div>
+      <div class="srow reveal">
+        <div class="n">03</div>
+        <h3>Ice storm damage</h3>
+        <p class="d">Split crowns, hanging limbs and trees on the ground, after the ice comes through. The phone is open 24 hours.</p>
+        <div class="th"><img src="assets/storm-stumps.jpg" alt="Two large trunks cut down to stumps, with the bucket truck and a yellow chipper on site." loading="lazy" decoding="async" width="980" height="1601"></div>
+      </div>
+      <div class="srow reveal">
+        <div class="n">04</div>
+        <h3>Shrub removal</h3>
+        <p class="d">Overgrown beds, fence rows and understory — cut out and hauled off.</p>
+        <div class="th"><img src="assets/before-lot.jpg" alt="A wooded lot thick with brush and dead limbs before clearing." loading="lazy" decoding="async" width="740" height="906"></div>
+      </div>
+      <div class="srow reveal">
+        <div class="n">05</div>
+        <h3>Quality wood</h3>
+        <p class="d"><q>Good quality wood good prices.</q> Their words, and the whole pitch.</p>
+        <div class="th"><img src="assets/wood-sawmill.jpg" alt="A portable sawmill cutting a log into lumber." loading="lazy" decoding="async" width="740" height="938"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hazard" aria-hidden="true"></div>
+
+<!-- ▸ 02 ICE STORM DAMAGE -->
+<section class="pad storm on-dark" id="storm">
+  <span class="ghost d" aria-hidden="true">02</span>
+  <div class="wrap storm-grid">
+    <div class="reveal">
+      <span class="lab" style="color:var(--sky);display:block;margin-bottom:16px">02 — Ice storm damage</span>
+      <h2>Ice is the one<br>that takes<br><span>Oklahoma trees.</span></h2>
+      <p>Wind a tree can usually stand. Ice is different. It loads a crown until limbs that held through every summer storm let go in the dark — over a roof, across a drive, into a fence line.</p>
+      <p><b>Ice storm damage is one of the five things we do</b>, and the phone is open 24 hours. It is the same number that's painted on the side of the truck.</p>
+      <div class="storm-hrs">
+        <span class="dot" aria-hidden="true"></span>
+        <span>
+          <span class="big">Open 24 hours</span>
+          <span class="lab" style="display:block">Listed open, every day</span>
+        </span>
+      </div>
+      <div>
+        <a class="btn btn-red" href="tel:+14055643572">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+          Call (405) 564-3572
+        </a>
+      </div>
+    </div>
+    <figure class="storm-photo reveal" data-d="1">
+      <img src="assets/storm-stumps.jpg" alt="Two large trunks cut down to stumps on a job, with the D&amp;D Tree Service bucket truck and a yellow chipper alongside." loading="lazy" decoding="async" width="980" height="1601">
+      <figcaption class="lab">Trunks down to the stump · truck and chipper on site</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ▸ 03 GOOD QUALITY WOOD -->
+<section class="pad wood" id="wood">
+  <span class="ghost" aria-hidden="true">03</span>
+  <div class="wrap">
+    <div class="shead reveal" style="margin-bottom:26px">
+      <span class="lab">03 — The wood side</span>
+    </div>
+    <div class="quote-blk reveal">
+      <span class="qmark" aria-hidden="true">“</span>
+      <blockquote>Good quality wood<br><em>good prices.</em></blockquote>
+      <cite>— D&amp;D Tree Service, in their own words</cite>
+    </div>
+    <div class="wood-say reveal">
+      <div>
+        <p>Most tree outfits haul the wood off and that is the end of it. Here it goes on the mill instead — cedar beams off the bed, curved timbers stacked against the fence, chips under the saw.</p>
+      </div>
+      <div>
+        <p>There's no catalogue and no price list. Call and ask what's on hand.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="tel:+14055643572">Call about wood</a>
+          <a class="btn btn-out" href="#quote" style="border-color:var(--coal);color:var(--coal)">Send a message</a>
+        </div>
+      </div>
+    </div>
+    <div class="wood-grid">
+      <figure class="tile a34 reveal">
+        <img src="assets/wood-sawmill.jpg" alt="A portable sawmill with a milled beam on the bed." loading="lazy" decoding="async" width="740" height="938">
+        <figcaption>The portable mill, with a beam coming off the bed.</figcaption>
+      </figure>
+      <figure class="tile a34 reveal" data-d="1">
+        <img src="assets/wood-timbers.jpg" alt="Milled curved timbers laid out against a fence." loading="lazy" decoding="async" width="1100" height="619">
+        <figcaption>Milled curved timbers, stacked against the fence.</figcaption>
+      </figure>
+      <figure class="tile a34 reveal" data-d="2">
+        <img src="assets/wood-saw.jpg" alt="A Stihl chainsaw resting on a bed of wood chips at a job site." loading="lazy" decoding="async" width="740" height="1004">
+        <figcaption>Saw down in the chips at the end of a cut.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="hazard lt" aria-hidden="true"></div>
+
+<!-- ▸ 04 RECENT WORK -->
+<section class="pad" id="work">
+  <span class="ghost" aria-hidden="true">04</span>
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="lab">04 — Recent work</span>
+      <h2>Their own photos,<br>off their own jobs.</h2>
+      <p>Every picture on this page came off D&amp;D Tree Service's own page. Nothing here is stock.</p>
+    </div>
+    <div class="work-grid">
+      <figure class="tile a34 reveal">
+        <img src="assets/work-sections.jpg" alt="Looking down from the bucket at a trunk being taken down in sections, with the truck below." loading="lazy" decoding="async" width="780" height="1274">
+        <figcaption>Looking down from the bucket. Trunk coming off in sections.</figcaption>
+      </figure>
+      <figure class="tile a34 reveal" data-d="1">
+        <img src="assets/work-climber.jpg" alt="A climber roped into the crown of a large tree beside a metal-roofed building." loading="lazy" decoding="async" width="780" height="1274">
+        <figcaption>Roped into the crown, alongside a metal building.</figcaption>
+      </figure>
+      <figure class="tile a34 reveal" data-d="2">
+        <img src="assets/work-street.jpg" alt="A tree being taken down on a residential street, with a yellow loader, a tracked machine and cut sections stacked at the curb." loading="lazy" decoding="async" width="780" height="1274">
+        <figcaption>Residential street. Loader, tracked machine, sections stacked at the curb.</figcaption>
+      </figure>
+      <figure class="tile a169 reveal">
+        <img src="assets/work-dumpbed.jpg" alt="The D&amp;D Tree Service bucket truck with its dump bed raised on a dirt drive." loading="lazy" decoding="async" width="960" height="540">
+        <figcaption>Dump bed up, chips out.</figcaption>
+      </figure>
+      <figure class="tile a169 reveal" data-d="1">
+        <img src="assets/work-haul.jpg" alt="A white pickup towing a loaded flatbed trailer on a country road under a low sun." loading="lazy" decoding="async" width="780" height="1040">
+        <figcaption>Pickup and flatbed, on the road out.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ▸ BEFORE / AFTER -->
+<section class="pad ba on-dark">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="lab">The same lot</span>
+      <h2>Brush out.<br>Trees left standing.</h2>
+    </div>
+    <div class="ba-grid">
+      <figure class="ba-fig reveal">
+        <img src="assets/before-lot.jpg" alt="Before: a wooded lot thick with brush and dead limbs." loading="lazy" decoding="async" width="740" height="906">
+        <figcaption class="stamp">Before</figcaption>
+      </figure>
+      <figure class="ba-fig after reveal" data-d="1">
+        <img src="assets/after-lot.jpg" alt="After: the same lot with the understory cleared, the standing trees left in place." loading="lazy" decoding="async" width="740" height="895">
+        <figcaption class="stamp">After</figcaption>
+      </figure>
+    </div>
+    <p class="ba-note reveal" data-d="2">One lot, two frames — both theirs. The understory and the dead limbs came out; the trees worth keeping stayed where they were.</p>
+  </div>
+</section>
+
+<!-- ▸ 05 WHERE WE WORK -->
+<section class="pad" id="area">
+  <span class="ghost" aria-hidden="true">05</span>
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="lab">05 — Where we work</span>
+      <h2>Out of Stillwater,<br>across four counties.</h2>
+      <p>Based on Oak Forrest Circle in Stillwater, and working Payne, Tulsa, Lincoln and Oklahoma counties.</p>
+    </div>
+    <div class="area-grid">
+      <div class="reveal">
+        <ul class="counties">
+          <li><div class="c">Payne</div><div class="lab">County, OK</div></li>
+          <li><div class="c">Tulsa</div><div class="lab">County, OK</div></li>
+          <li><div class="c">Lincoln</div><div class="lab">County, OK</div></li>
+          <li><div class="c">Oklahoma</div><div class="lab">County, OK</div></li>
+        </ul>
+        <div class="base">
+          <div class="lab">The yard</div>
+          <div class="a">6898 Oak Forrest Cir<br>Stillwater, OK 74074</div>
+        </div>
+      </div>
+      <div class="reveal" data-d="1">
+        <div class="map">
+          <iframe title="Map of Stillwater, Oklahoma — D&amp;D Tree Service" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-97.2100%2C36.0200%2C-96.9100%2C36.2100&amp;layer=mapnik&amp;marker=36.1156306%2C-97.0585717"></iframe>
+          <div class="map-cap lab">Stillwater, Payne County, Oklahoma</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hazard lt" aria-hidden="true"></div>
+
+<!-- ▸ 06 QUOTE -->
+<section class="pad quote on-dark" id="quote">
+  <span class="ghost d" aria-hidden="true">06</span>
+  <div class="wrap quote-grid">
+    <div class="reveal">
+      <span class="lab" style="color:var(--signal-lt);display:block;margin-bottom:16px">06 — Get a quote</span>
+      <h2 style="font-size:clamp(38px,5.2vw,70px);margin-bottom:18px">Tell us what<br>needs to come<br>down.</h2>
+      <p style="color:#C2C6C8;max-width:52ch;margin-bottom:26px">Where it is, how big it is, and what's underneath it. Photos help. If it can't wait, call — the phone is open 24 hours.</p>
+      <div class="cblock">
+        <div class="crow">
+          <span class="lab">Phone</span>
+          <span class="val big"><a href="tel:+14055643572">(405) 564-3572</a></span>
+        </div>
+        <div class="crow">
+          <span class="lab">Email</span>
+          <span class="val"><a href="mailto:daviddecker361@yahoo.com">daviddecker361@yahoo.com</a></span>
+        </div>
+        <div class="crow">
+          <span class="lab">Address</span>
+          <span class="val">6898 Oak Forrest Cir, Stillwater, OK 74074</span>
+        </div>
+        <div class="crow">
+          <span class="lab">Hours</span>
+          <span class="val">Open 24 hours</span>
+        </div>
+        <div class="crow">
+          <span class="lab">Facebook</span>
+          <span class="val"><a href="https://www.facebook.com/p/DD-Tree-Service-100034329139610/" rel="noopener">D&amp;D Tree Service</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" data-d="1">
+      <form class="qf" action="#" method="post" data-form="quote" novalidate>
+        <div class="r2">
+          <div><label for="q-name">Your name</label><input id="q-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="q-email">Email</label>
+        <input id="q-email" name="email" type="email" autocomplete="email">
+        <label for="q-service">What do you need?</label>
+        <select id="q-service" name="service">
+          <option>Tree services</option>
+          <option>Tree trimming</option>
+          <option>Ice storm damage</option>
+          <option>Shrub removal</option>
+          <option>Quality wood</option>
+          <option>Not sure yet</option>
+        </select>
+        <label for="q-msg">Tell us about the job</label>
+        <textarea id="q-msg" name="message" placeholder="Where is it, how big is it, and what's underneath it?"></textarea>
+        <div class="hp" aria-hidden="true"><label for="q-web">Website</label><input id="q-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-red" type="submit">Send it
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="fine">Or call <a href="tel:+14055643572" style="font-weight:600;text-decoration:underline">(405) 564-3572</a>.</p>
+        <p class="sent" role="status">This preview isn't wired to send yet — please call (405) 564-3572 or email daviddecker361@yahoo.com.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="wordmark"><span class="tick" aria-hidden="true"></span><span>D<span class="amp">&amp;</span>D Tree Service</span></div>
+        <p>Tree services, trimming, ice storm damage, shrub removal and quality wood. Stillwater, Oklahoma.</p>
+      </div>
+      <div>
+        <h4>What we do</h4>
+        <ul>
+          <li><a href="#services">Tree services</a></li>
+          <li><a href="#services">Tree trimming</a></li>
+          <li><a href="#storm">Ice storm damage</a></li>
+          <li><a href="#services">Shrub removal</a></li>
+          <li><a href="#wood">Quality wood</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+14055643572">(405) 564-3572</a></li>
+          <li><a href="mailto:daviddecker361@yahoo.com">daviddecker361@yahoo.com</a></li>
+          <li>6898 Oak Forrest Cir<br>Stillwater, OK 74074</li>
+          <li>Open 24 hours</li>
+          <li><a href="https://www.facebook.com/p/DD-Tree-Service-100034329139610/" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© <span id="yr">2026</span> D&amp;D Tree Service · Stillwater, OK</span>
+      <span>Preview designed by Pickr Media · <a href="https://pickrmedia.com/claim/?site=d-and-d-tree-service" style="text-decoration:underline">Make it yours</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+14055643572"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>Call now</a>
+  <a class="c2" href="#quote">Get a quote</a>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('mnav');
+  b.addEventListener('click',function(){
+    var o=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',o?'true':'false');
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+
+  var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  if(reduce||!('IntersectionObserver' in window)){
+    els.forEach(function(el){el.classList.add('in')});
+  }else{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    els.forEach(function(el){io.observe(el)});
+  }
+
+  var f=document.querySelector('form[data-form="quote"]');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.website.value) return;
+    if(f.getAttribute('action')==='#'){f.querySelector('.sent').style.display='block';return}
+    f.submit();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spanky's Pressure Washing — House Washing in Holt &amp; Crestview, FL</title>
+<meta name="description" content="Spanky's Pressure Washing washes houses, roofs, driveways, pool decks, enclosures and gutters across Okaloosa, Santa Rosa, Escambia and Walton counties. Licensed &amp; insured. Free estimates. Residential and commercial.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spanky's Pressure Washing">
+<meta property="og:title" content="Spanky's Pressure Washing — House Washing in Holt &amp; Crestview, FL">
+<meta property="og:description" content="Houses, roofs, driveways, pool decks, enclosures and gutters — washed across Okaloosa, Santa Rosa, Escambia and Walton counties. Licensed &amp; insured. Free estimates.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="theme-color" content="#3A6FA7">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<style>
+/* ---------------------------------------------------------------- tokens */
+:root{
+  --blue:#3A6FA7;        /* mascot roundel blue (profile accent, sampled from logo.png) */
+  --blue-deep:#1C3E62;   /* roundel blue, darkened */
+  --ink:#15243A;         /* cartoon outline navy */
+  --green:#3F7C45;       /* mascot's shirt / the green washer in the badge */
+  --rust:#A8442F;        /* the cap patch + trigger red in the badge */
+  --cream:#FFF6E9;       /* clean tan metal roof, lightened — the paper */
+  --sand:#F3E4CB;        /* tan roof + sunlit concrete */
+  --amber:#C9863B;       /* sunlit stained concrete in their driveway photo */
+  --sky:#DCE8F7;         /* the blue sky in their own after photo, lightened */
+  --line:rgba(21,36,58,.14);
+  --gutter:clamp(20px,5vw,54px);
+  --maxw:1290px;
+  --disp:"Fredoka",system-ui,sans-serif;
+  --body:"Nunito Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.62;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--disp);font-weight:600;margin:0;line-height:1.02;letter-spacing:-.012em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);width:100%}
+.eyebrow{font-family:var(--body);font-weight:800;font-size:12.5px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--blue-deep);display:flex;align-items:center;gap:12px;margin:0 0 20px}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--amber);border-radius:2px;flex:none}
+.lead{font-size:clamp(17px,1.35vw,19.5px);color:rgba(21,36,58,.78);max-width:62ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ------------------------------------------------------------- preview */
+.preview{background:var(--ink);color:#fff;font-size:14px;padding:11px var(--gutter);display:flex;align-items:center;
+  justify-content:center;gap:16px;flex-wrap:wrap;position:relative;z-index:80;text-align:center}
+.preview strong{font-weight:700}
+.preview a{background:var(--amber);color:#1a1205;font-weight:800;padding:7px 15px;border-radius:999px;font-size:13px;
+  text-decoration:none;white-space:nowrap;transition:transform .18s ease,background .18s ease}
+.preview a:hover{background:#E0A254;transform:translateY(-1px)}
+
+/* -------------------------------------------------------------- header */
+.site-header{position:sticky;top:0;z-index:70;background:rgba(255,246,233,.93);backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--line)}
+.hdr{display:flex;align-items:center;gap:18px;min-height:74px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brand img{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 2px 0 rgba(21,36,58,.10),0 0 0 2px #fff}
+.brand .lock{display:block}
+.brand b{font-family:var(--disp);font-weight:600;font-size:22px;letter-spacing:-.02em;display:block;line-height:1}
+.brand .sub{font-size:10.5px;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--blue);display:block;margin-top:3px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--ink);position:relative;padding:4px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--amber);transition:right .25s ease}
+.nav a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--body);font-weight:800;
+  text-decoration:none;border-radius:999px;border:0;cursor:pointer;line-height:1;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-call{background:var(--blue);color:#fff;padding:14px 22px;font-size:15px;box-shadow:0 8px 20px rgba(58,111,167,.28)}
+.btn-call:hover{background:#31618F;transform:translateY(-2px);box-shadow:0 12px 26px rgba(58,111,167,.34)}
+.btn-ghost{background:transparent;color:var(--blue-deep);padding:14px 22px;font-size:15px;box-shadow:inset 0 0 0 2px rgba(28,62,98,.28)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--blue-deep);transform:translateY(-2px)}
+.btn-sun{background:var(--amber);color:#1a1205;padding:14px 22px;font-size:15px;box-shadow:0 8px 20px rgba(201,134,59,.3)}
+.btn-sun:hover{background:#D9944A;transform:translateY(-2px)}
+.icon-call{display:none}
+.burger{display:none;width:46px;height:46px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;
+  align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:0}
+.burger i{display:block;width:19px;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------------------------------------------------------------- hero */
+.hero{position:relative;overflow:hidden;background:var(--cream)}
+.hero::before{content:"";position:absolute;right:-12%;top:-30%;width:70vw;height:70vw;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,134,59,.22),rgba(201,134,59,0) 62%);pointer-events:none;animation:sun 16s ease-in-out infinite alternate}
+@keyframes sun{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-3%,3%,0) scale(1.06)}}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(28px,4vw,64px);align-items:center;
+  padding:clamp(38px,4.4vw,58px) var(--gutter) clamp(46px,4.8vw,66px);position:relative;z-index:2}
+.badge-big{width:clamp(104px,11.2vw,152px);height:clamp(104px,11.2vw,152px);border-radius:50%;background:#fff;
+  box-shadow:0 0 0 5px #fff,0 16px 34px rgba(21,36,58,.22);margin:0 0 26px;transform:rotate(-4deg);
+  transition:transform .4s cubic-bezier(.2,.8,.3,1)}
+.badge-big:hover{transform:rotate(0deg) scale(1.03)}
+.hero h1{font-size:clamp(40px,6.1vw,88px);letter-spacing:-.028em;margin:0 0 22px;max-width:13ch}
+.hero h1 em{font-style:normal;color:var(--blue);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:1%;right:1%;bottom:.055em;height:.052em;border-radius:99px;
+  background:var(--amber);opacity:.62}
+.hero .lead{font-size:clamp(16.5px,1.4vw,19.5px);max-width:48ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-cta .btn-call,.hero-cta .btn-ghost{padding:17px 27px;font-size:16px}
+.hero-note{margin:24px 0 0;font-size:14px;font-weight:700;color:rgba(21,36,58,.6)}
+
+/* hero photo card */
+.shot{position:relative;justify-self:end;width:100%;max-width:600px}
+.shot figure{margin:0;background:#fff;padding:13px 13px 13px;border-radius:6px;transform:rotate(-1.3deg);
+  box-shadow:0 34px 70px rgba(21,36,58,.24),0 4px 12px rgba(21,36,58,.10)}
+.shot img{border-radius:3px;aspect-ratio:3/2;object-fit:cover;object-position:50% 68%;width:100%}
+.shot .tab{position:absolute;left:-14px;bottom:18px;background:var(--blue);color:#fff;font-weight:800;font-size:12.5px;
+  letter-spacing:.12em;text-transform:uppercase;padding:11px 18px;border-radius:999px;transform:rotate(-1.3deg);
+  box-shadow:0 12px 26px rgba(28,62,98,.34);z-index:3}
+.shot .dots{position:absolute;right:-18px;bottom:-20px;width:116px;height:98px;z-index:0;opacity:.32;
+  background-image:radial-gradient(var(--blue) 1.7px,transparent 1.8px);background-size:13px 13px}
+
+/* wave */
+.wave{display:block;width:100%;height:clamp(26px,3.4vw,52px);color:var(--sand)}
+
+/* -------------------------------------------------------------- claims */
+.claims{background:var(--sand);padding:clamp(26px,3vw,40px) 0 clamp(30px,3.4vw,44px)}
+.claims-row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px)}
+.claim{display:flex;align-items:center;gap:15px;background:rgba(255,255,255,.72);border-radius:999px;
+  padding:13px 22px 13px 14px;box-shadow:0 2px 0 rgba(21,36,58,.06)}
+.claim .ic{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;flex:none}
+.claim .ic svg{width:21px;height:21px}
+.claim b{font-family:var(--disp);font-weight:600;font-size:clamp(16px,1.35vw,19px);letter-spacing:-.01em;line-height:1.15}
+.areastrip{margin:clamp(24px,2.6vw,34px) 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;
+  font-size:13.5px;font-weight:700;color:rgba(21,36,58,.66)}
+.areastrip span{display:inline-flex;align-items:center;gap:8px}
+.areastrip span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none}
+
+/* --------------------------------------------------------------- proof */
+.sec{padding:clamp(64px,7.4vw,112px) 0}
+.sec-head{max-width:760px;margin:0 0 clamp(36px,4vw,60px)}
+.sec-head h2{font-size:clamp(32px,4.1vw,58px);letter-spacing:-.025em;margin:0 0 16px}
+.pairs{display:flex;flex-direction:column;gap:clamp(40px,5vw,78px)}
+.pair{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(18px,2.4vw,38px);align-items:start}
+.pair .num{font-family:var(--disp);font-weight:700;font-size:clamp(52px,7vw,104px);line-height:.82;color:var(--amber);
+  opacity:.26;letter-spacing:-.04em;padding-top:4px}
+.pair-body{min-width:0}
+.pair-imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#fff;padding:10px;border-radius:8px;
+  box-shadow:0 20px 44px rgba(21,36,58,.14),0 2px 6px rgba(21,36,58,.07)}
+.pair-imgs figure{margin:0;position:relative;overflow:hidden;border-radius:4px;background:var(--sand)}
+.pair-imgs img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform .6s cubic-bezier(.2,.8,.3,1)}
+.pair-imgs figure:hover img{transform:scale(1.035)}
+.tagl{position:absolute;left:10px;top:10px;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:#fff;padding:7px 13px;border-radius:999px;z-index:2;box-shadow:0 5px 14px rgba(21,36,58,.3)}
+.tagl.b{background:var(--rust)}
+.tagl.a{background:var(--green)}
+.pair-cap{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:18px 2px 0}
+.pair-cap h3{font-size:clamp(20px,2vw,27px);letter-spacing:-.018em}
+.pair-cap p{margin:0;font-size:15px;color:rgba(21,36,58,.62);font-weight:600}
+.pair:nth-child(even){grid-template-columns:minmax(0,1fr) auto}
+.pair:nth-child(even) .num{order:2;text-align:right}
+.pair:nth-child(even) .pair-body{order:1}
+.pair.tall .pair-imgs img{aspect-ratio:4/5}
+.pair.stack .pair-imgs{grid-template-columns:1fr}
+.pair.stack .pair-imgs img{aspect-ratio:3.35/1}
+
+/* --------------------------------------------------------- sunny band */
+.band{position:relative;min-height:clamp(320px,38vw,460px);display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(21,36,58,.86) 0%,rgba(21,36,58,.5) 38%,rgba(21,36,58,.12) 72%,rgba(21,36,58,0) 100%)}
+.band .wrap{position:relative;z-index:2;padding-top:clamp(50px,7vw,90px);padding-bottom:clamp(30px,3.6vw,50px)}
+.band h2{color:var(--cream);font-size:clamp(24px,2.9vw,40px);max-width:24ch;letter-spacing:-.022em;
+  text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.band .credit{margin:16px 0 0;color:rgba(255,246,233,.72);font-size:13px;font-weight:700;letter-spacing:.05em}
+
+/* ------------------------------------------------------------ services */
+.services{background:var(--cream)}
+.svc-grid{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:clamp(30px,4.4vw,70px);align-items:start}
+.svc-photo{margin:0;position:relative}
+.svc-photo img{border-radius:8px;width:100%;aspect-ratio:3/4;object-fit:cover;box-shadow:0 26px 56px rgba(21,36,58,.2)}
+.svc-photo figcaption{margin-top:14px;font-size:14px;font-weight:700;color:rgba(21,36,58,.6);display:flex;gap:9px;align-items:center}
+.svc-photo figcaption::before{content:"";width:22px;height:2px;background:var(--amber);flex:none;border-radius:2px}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc-list li{display:flex;align-items:baseline;gap:clamp(14px,2vw,26px);padding:clamp(15px,1.7vw,22px) 4px;
+  border-bottom:1px solid var(--line);transition:padding-left .25s ease}
+.svc-list li:hover{padding-left:12px}
+.svc-list .n{font-family:var(--disp);font-weight:600;font-size:14px;color:var(--amber);letter-spacing:.06em;flex:none;width:28px}
+.svc-list .t{font-family:var(--disp);font-weight:500;font-size:clamp(21px,2.3vw,31px);letter-spacing:-.018em;line-height:1.14}
+
+/* ---------------------------------------------------------- commercial */
+.comm{background:var(--sky)}
+.comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.comm figure{margin:0}
+.comm img{border-radius:8px;width:100%;aspect-ratio:2/1;object-fit:cover;box-shadow:0 16px 36px rgba(21,36,58,.16)}
+.comm figcaption{margin-top:13px;font-size:14.5px;font-weight:700;color:var(--blue-deep);line-height:1.4}
+
+/* --------------------------------------------------------------- area */
+.area-grid{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(28px,4vw,62px);align-items:start}
+.area-photo{margin:0}
+.area-photo img{border-radius:8px;width:100%;aspect-ratio:3/4;object-fit:cover;box-shadow:0 24px 50px rgba(21,36,58,.2)}
+.area-photo figcaption{margin-top:13px;font-size:14px;font-weight:700;color:rgba(21,36,58,.6)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px;padding:0;list-style:none}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:700;font-size:14.5px;
+  box-shadow:0 2px 0 rgba(21,36,58,.05)}
+.chips li:first-child{background:var(--blue);color:#fff;border-color:var(--blue)}
+.mapbox{border-radius:10px;overflow:hidden;border:10px solid #fff;box-shadow:0 22px 48px rgba(21,36,58,.18);background:var(--sand)}
+.mapbox iframe{display:block;width:100%;height:clamp(260px,30vw,380px);border:0}
+
+/* -------------------------------------------------------------- quote */
+.quote{background:var(--blue-deep);color:#fff}
+.quote .eyebrow{color:rgba(255,246,233,.82)}
+.quote h2{color:#fff;font-size:clamp(32px,4.1vw,54px);margin:0 0 16px}
+.quote .lead{color:rgba(255,246,233,.82)}
+.q-grid{display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);gap:clamp(30px,4.4vw,68px);align-items:start}
+.contact{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:20px}
+.contact li{display:flex;gap:14px;align-items:flex-start}
+.contact .ic{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none}
+.contact .ic svg{width:18px;height:18px;color:var(--cream)}
+.contact small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,246,233,.62);margin-bottom:3px}
+.contact a,.contact span{color:#fff;text-decoration:none;font-weight:700;font-size:17px;line-height:1.35;word-break:break-word}
+.contact a:hover{text-decoration:underline}
+.qf{background:var(--cream);color:var(--ink);border-radius:12px;padding:clamp(22px,2.6vw,34px);
+  box-shadow:0 30px 70px rgba(6,20,36,.36)}
+.qf .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qf label{display:block;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:rgba(21,36,58,.62);margin:0 0 7px}
+.qf .f{margin:0 0 14px}
+.qf input,.qf select,.qf textarea{width:100%;font-family:var(--body);font-size:16px;color:var(--ink);background:#fff;
+  border:1px solid rgba(21,36,58,.2);border-radius:8px;padding:13px 14px;outline:0;transition:border-color .2s,box-shadow .2s}
+.qf input:focus,.qf select:focus,.qf textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(58,111,167,.2)}
+.qf textarea{min-height:104px;resize:vertical}
+.qf .btn-sun{width:100%;padding:17px;font-size:16px;margin-top:4px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sent{display:none;margin:14px 0 0;font-size:14.5px;font-weight:700;color:var(--blue-deep);background:var(--sky);
+  border-radius:8px;padding:12px 14px}
+.qf .fine{margin:14px 0 0;font-size:13px;color:rgba(21,36,58,.6)}
+
+/* ------------------------------------------------------------- footer */
+.site-footer{background:var(--ink);color:rgba(255,246,233,.78);padding:clamp(46px,5vw,70px) 0 34px;font-size:15px}
+.f-top{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:34px;align-items:start}
+.f-brand{display:flex;gap:15px;align-items:center}
+.f-brand img{width:60px;height:60px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #fff}
+.f-brand b{font-family:var(--disp);font-weight:600;font-size:22px;color:var(--cream);display:block;line-height:1.1}
+.f-brand .sub{font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);display:block;margin-top:4px}
+.site-footer h4{font-family:var(--body);font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,246,233,.55);margin:0 0 12px}
+.site-footer a{color:var(--cream);text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+.f-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.f-bot{margin-top:clamp(30px,3.4vw,46px);padding-top:22px;border-top:1px solid rgba(255,246,233,.14);
+  display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between;font-size:13px;color:rgba(255,246,233,.55)}
+
+/* ------------------------------------------------------------ callbar */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:75;background:var(--ink);gap:10px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -10px 30px rgba(0,0,0,.35)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 10px;font-weight:800;
+  font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:10px}
+.callbar .c1{background:var(--amber);color:#1a1205}
+.callbar .c2{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.26)}
+.callbar svg{width:17px;height:17px}
+
+/* ------------------------------------------------------------- reveals */
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1)}
+[data-reveal].in{opacity:1;transform:none}
+[data-reveal][data-d="1"]{transition-delay:.09s}
+[data-reveal][data-d="2"]{transition-delay:.18s}
+[data-reveal][data-d="3"]{transition-delay:.27s}
+
+/* ---------------------------------------------------------- responsive */
+@media (max-width:1100px){
+  .nav{position:absolute;left:0;right:0;top:100%;background:var(--cream);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gutter) 18px;display:none;
+    box-shadow:0 22px 40px rgba(21,36,58,.14)}
+  .nav.open{display:flex}
+  .nav a{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+  .nav a:last-child{border-bottom:0}
+  .nav a::after{display:none}
+  .burger{display:flex}
+  .site-header .btn-call span{display:none}
+  .site-header .btn-call{padding:13px;border-radius:50%}
+  .hero-in{grid-template-columns:1fr;gap:38px}
+  .shot{justify-self:start;max-width:720px}
+  .q-grid,.svc-grid,.area-grid{grid-template-columns:1fr}
+  .svc-photo img,.area-photo img{aspect-ratio:16/10}
+  .area-photo{max-width:420px}
+  .svc-photo{max-width:520px}
+}
+@media (max-width:860px){
+  .claims-row{grid-template-columns:1fr;gap:10px}
+  .comm-grid{grid-template-columns:1fr;gap:22px}
+  .comm img{aspect-ratio:16/9}
+  .f-top{grid-template-columns:1fr;gap:28px}
+  .pair{grid-template-columns:1fr;gap:10px}
+  .pair:nth-child(even){grid-template-columns:1fr}
+  .pair:nth-child(even) .num{order:0;text-align:left}
+  .pair:nth-child(even) .pair-body{order:1}
+  .pair .num{font-size:clamp(40px,11vw,60px);padding-top:0}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .callbar{display:flex}
+  .site-footer{padding-bottom:104px}
+  .preview{font-size:12.5px;padding:9px 16px;gap:9px}
+  .preview a{padding:6px 13px;font-size:12px}
+  .hero-cta .btn-call,.hero-cta .btn-ghost{width:100%;padding:16px 20px}
+  .qf .row{grid-template-columns:1fr}
+  .pair-imgs{padding:7px;gap:6px}
+  .pair-imgs img,.pair.tall .pair-imgs img{aspect-ratio:1/1}
+  .pair.stack .pair-imgs img{aspect-ratio:2.7/1}
+  .tagl{left:6px;top:6px;font-size:9.5px;letter-spacing:.11em;padding:5px 9px}
+  .pair-cap{margin-top:14px}
+  .pair-cap h3{font-size:19px}
+  .pair-cap p{font-size:14px}
+  .shot figure{padding:9px}
+  .shot .tab{left:-6px;font-size:11px;padding:9px 14px}
+  .shot .dots{display:none}
+  .brand b{font-size:19px}
+  .brand img{width:42px;height:42px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  [data-reveal]{opacity:1!important;transform:none!important}
+  .hero::before{animation:none}
+  .badge-big:hover,.btn:hover{transform:none}
+  .pair-imgs figure:hover img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="preview" role="note">
+  <span>This preview was designed for <strong>Spanky's Pressure Washing</strong> by Pickr Media.</span>
+  <a href="https://pickrmedia.com/claim/?site=spankys-pressure-washing">Make it yours →</a>
+</div>
+
+<header class="site-header">
+  <div class="wrap hdr">
+    <a class="brand" href="#top" aria-label="Spanky's Pressure Washing — home">
+      <img src="assets/badge.png" width="46" height="46" alt="" fetchpriority="high">
+      <span class="lock"><b>Spanky's</b><span class="sub">Pressure Washing</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#work">The work</a>
+      <a href="#services">What we wash</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Free estimate</a>
+    </nav>
+    <a class="btn btn-call" href="tel:+18502592782" aria-label="Call Spanky's Pressure Washing on (850) 259-2782">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+      <span>(850) 259-2782</span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================================================ HERO -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <img class="badge-big" src="assets/badge.png" width="152" height="152" alt="Spanky's House Washing mascot badge — a washer in blue overalls, thumbs up, with a pressure washer wand, ringed by the words Residential and Commercial" fetchpriority="high">
+        <p class="eyebrow">Holt, Florida · Residential and commercial</p>
+        <h1>Thumbs up to a <em>clean</em> house.</h1>
+        <p class="lead">Spanky's washes houses, roofs, driveways, pool decks, enclosures and gutters — from Holt and Crestview out across Okaloosa, Santa Rosa, Escambia and Walton counties.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+18502592782">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <span>Call (850) 259-2782</span>
+          </a>
+          <a class="btn btn-ghost" href="#quote">Get a free estimate</a>
+        </div>
+        <p class="hero-note">Licensed &amp; insured · Free estimates</p>
+      </div>
+
+      <div class="shot">
+        <span class="dots" aria-hidden="true"></span>
+        <figure>
+          <img src="assets/hero.jpg" width="1440" height="1080" alt="A brick house with its tan metal roof and concrete driveway freshly washed" fetchpriority="high" decoding="async">
+        </figure>
+        <span class="tab">Roof and drive, washed</span>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 34c120-26 240-30 360-12s240 46 360 40 240-42 360-46 240 14 360 22v22H0Z"/></svg>
+  </section>
+
+  <!-- ========================================================== CLAIMS -->
+  <section class="claims">
+    <div class="wrap">
+      <div class="claims-row">
+        <div class="claim" data-reveal>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5.4v5.9c0 5 3.4 9.6 8 10.7 4.6-1.1 8-5.7 8-10.7V5.4Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <b>Licensed &amp; insured</b>
+        </div>
+        <div class="claim" data-reveal data-d="1">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 12 22l-9-9V4.4C3 3.6 3.6 3 4.4 3H13l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="8" cy="8" r="1.4"/></svg></span>
+          <b>Free estimates</b>
+        </div>
+        <div class="claim" data-reveal data-d="2">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6-4.5V21"/><path d="M9 21V7l12 4v10"/><path d="M13 13h1M13 17h1M17 13h1M17 17h1"/></svg></span>
+          <b>Residential and commercial</b>
+        </div>
+      </div>
+      <p class="areastrip">
+        <span>Holt, FL</span><span>Crestview, FL</span><span>Okaloosa County</span>
+        <span>Santa Rosa County</span><span>Escambia County</span><span>Walton County</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================== PROOF -->
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">The work</p>
+        <h2>See it for yourself.</h2>
+        <p class="lead">Every photo on this page comes from Spanky's own job photos. The same job, before and after.</p>
+      </div>
+
+      <div class="pairs">
+
+        <article class="pair" data-reveal>
+          <div class="num" aria-hidden="true">01</div>
+          <div class="pair-body">
+            <div class="pair-imgs">
+              <figure><span class="tagl b">Before</span><img src="assets/p1-before.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Brick house with a streaked, dirty tan metal roof and a stained concrete driveway, hose run out across it"></figure>
+              <figure><span class="tagl a">After</span><img src="assets/p1-after.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="The same brick house with a clean tan metal roof and a washed concrete driveway"></figure>
+            </div>
+            <div class="pair-cap"><h3>Metal roof and concrete drive</h3><p>The house at the top of this page, before the wash.</p></div>
+          </div>
+        </article>
+
+        <article class="pair" data-reveal>
+          <div class="num" aria-hidden="true">02</div>
+          <div class="pair-body">
+            <div class="pair-imgs">
+              <figure><span class="tagl b">Before</span><img src="assets/p2-before.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Brick house with a white metal roof streaked grey with dirt above the garage"></figure>
+              <figure><span class="tagl a">After</span><img src="assets/p2-after.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="The same house with the metal roof washed white again, a ladder still leaning against the eave"></figure>
+            </div>
+            <div class="pair-cap"><h3>Metal roof, front of house</h3><p>Ladder still up in the second frame.</p></div>
+          </div>
+        </article>
+
+        <article class="pair stack" data-reveal>
+          <div class="num" aria-hidden="true">03</div>
+          <div class="pair-body">
+            <div class="pair-imgs">
+              <figure><span class="tagl b">Before</span><img src="assets/p3-before.jpg" width="1200" height="342" loading="lazy" decoding="async" alt="Long brick house with a rust-streaked metal roof and a dingy yellow fascia board"></figure>
+              <figure><span class="tagl a">After</span><img src="assets/p3-after.jpg" width="1200" height="377" loading="lazy" decoding="async" alt="The same house with a clean dark metal roof and bright fascia, under a blue sky"></figure>
+            </div>
+            <div class="pair-cap"><h3>Metal roof, eaves and brick</h3><p>Roof and fascia, one job.</p></div>
+          </div>
+        </article>
+
+        <article class="pair tall" data-reveal>
+          <div class="num" aria-hidden="true">04</div>
+          <div class="pair-body">
+            <div class="pair-imgs">
+              <figure><span class="tagl b">Before</span><img src="assets/p4-before.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Wood deck boards dark with grime, algae and fallen leaves beside white siding"></figure>
+              <figure><span class="tagl a">After</span><img src="assets/p4-after.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="The same wood deck washed clean, the grain of the boards bright again"></figure>
+            </div>
+            <div class="pair-cap"><h3>Wood deck</h3><p>Boards and rail.</p></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== SUNNY BAND -->
+  <section class="band">
+    <img src="assets/sunny-band.jpg" width="1700" height="580" loading="lazy" decoding="async" alt="A washed brick house with a clean roof and front walk on a bright, sunny day">
+    <div class="wrap">
+      <h2>Mostly houses — plus the drive, the pool deck and the gutters.</h2>
+      <p class="credit">Spanky's Pressure Washing · Holt, FL</p>
+    </div>
+  </section>
+
+  <!-- ======================================================== SERVICES -->
+  <section class="sec services" id="services">
+    <div class="wrap svc-grid">
+      <figure class="svc-photo" data-reveal>
+        <img src="assets/roof-midwash.jpg" width="950" height="1267" loading="lazy" decoding="async" alt="Looking down the ridge of a tan metal roof, one plane still wet from being rinsed">
+        <figcaption>A metal roof, mid-wash.</figcaption>
+      </figure>
+      <div data-reveal data-d="1">
+        <p class="eyebrow">What we wash</p>
+        <h2 style="font-size:clamp(32px,4.1vw,54px);letter-spacing:-.025em;margin:0 0 16px">Seven surfaces, one hose.</h2>
+        <p class="lead" style="margin-bottom:30px">Mostly residential houses. Driveways, pool decks and enclosures. Gutters cleaned out. And some roofs.</p>
+        <ul class="svc-list">
+          <li><span class="n">01</span><span class="t">House washing</span></li>
+          <li><span class="n">02</span><span class="t">Driveways</span></li>
+          <li><span class="n">03</span><span class="t">Pool decks</span></li>
+          <li><span class="n">04</span><span class="t">Pool enclosures</span></li>
+          <li><span class="n">05</span><span class="t">Gutter cleaning</span></li>
+          <li><span class="n">06</span><span class="t">Roof washing</span></li>
+          <li><span class="n">07</span><span class="t">Commercial buildings</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== COMMERCIAL -->
+  <section class="sec comm" id="commercial">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">Residential and commercial</p>
+        <h2>Not just houses.</h2>
+        <p class="lead">Spanky's washes commercial buildings too — metal facades and roofs.</p>
+      </div>
+      <div class="comm-grid">
+        <figure data-reveal><img src="assets/comm-1.jpg" width="1200" height="635" loading="lazy" decoding="async" alt="Emerald Coast Indoor Shooting and Sport, a large white metal-clad building with a clean gable front"><figcaption>Emerald Coast Indoor Shooting &amp; Sport</figcaption></figure>
+        <figure data-reveal data-d="1"><img src="assets/comm-2.jpg" width="1200" height="534" loading="lazy" decoding="async" alt="The George H. Whitehurst Municipal Building in Crestview, its blue and cream metal facade washed"><figcaption>George H. Whitehurst Municipal Building, Crestview</figcaption></figure>
+        <figure data-reveal data-d="2"><img src="assets/comm-3.jpg" width="1200" height="450" loading="lazy" decoding="async" alt="The City of Crestview Police Department sign and metal roofline, with water spraying at the left of frame"><figcaption>City of Crestview Police Department</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ AREA -->
+  <section class="sec" id="area">
+    <div class="wrap area-grid">
+      <figure class="area-photo" data-reveal>
+        <img src="assets/worker.jpg" width="690" height="960" loading="lazy" decoding="async" alt="A worker washing a concrete driveway, the washed strip pale against the stained concrete">
+        <figcaption>Washing a driveway.</figcaption>
+      </figure>
+      <div data-reveal data-d="1">
+        <p class="eyebrow">Where we work</p>
+        <h2 style="font-size:clamp(32px,4.1vw,54px);letter-spacing:-.025em;margin:0 0 16px">Out of Holt, across four counties.</h2>
+        <p class="lead" style="margin-bottom:26px">Spanky's is based at 29 Turkey Trot Rd in Holt, Florida, and works from there out to Crestview and across the four counties below.</p>
+        <ul class="chips">
+          <li>Holt, FL</li><li>Crestview, FL</li><li>Okaloosa County</li>
+          <li>Santa Rosa County</li><li>Escambia County</li><li>Walton County</li>
+        </ul>
+        <div class="mapbox">
+          <iframe title="Map of Spanky's Pressure Washing service area around Holt, Florida" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-87.75%2C30.20%2C-85.80%2C31.10&amp;layer=mapnik&amp;marker=30.7157457%2C-86.7457897"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== QUOTE -->
+  <section class="sec quote" id="quote">
+    <div class="wrap q-grid">
+      <div data-reveal>
+        <p class="eyebrow">Free estimates</p>
+        <h2>Tell us what needs washing.</h2>
+        <p class="lead">Send the details below and say where you are. Estimates are free.</p>
+        <ul class="contact">
+          <li>
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <span><small>Phone</small><a href="tel:+18502592782">(850) 259-2782</a></span>
+          </li>
+          <li>
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span><small>Email</small><a href="mailto:spankyspw29@gmail.com">spankyspw29@gmail.com</a></span>
+          </li>
+          <li>
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.5c0 5.5-8 11.5-8 11.5S4 16 4 10.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.3" r="2.8"/></svg></span>
+            <span><small>Based at</small><span>29 Turkey Trot Rd, Holt, FL 32564</span></span>
+          </li>
+          <li>
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.3-1.6 1.7-1.6h1.7V4.2c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.6H7.8V14h2.7v8Z"/></svg></span>
+            <span><small>Facebook</small><a href="https://www.facebook.com/p/Spankys-Pressure-Washing-100057068036040/" rel="noopener">Spanky's Pressure Washing</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="qf" data-reveal data-d="1" action="#" method="post" data-form="quote" novalidate>
+        <div class="row">
+          <div class="f"><label for="q-name">Name</label><input id="q-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="f"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="f"><label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email"></div>
+        <div class="f"><label for="q-service">What needs washing?</label>
+          <select id="q-service" name="service">
+            <option value="">Choose one…</option>
+            <option>House washing</option>
+            <option>Driveways</option>
+            <option>Pool decks</option>
+            <option>Pool enclosures</option>
+            <option>Gutter cleaning</option>
+            <option>Roof washing</option>
+            <option>Commercial buildings</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="f"><label for="q-msg">Details</label><textarea id="q-msg" name="message" placeholder="Where you are, and what you'd like washed."></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="q-web">Website</label><input id="q-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-sun" type="submit">Request my free estimate</button>
+        <p class="sent" role="status">This preview isn't wired to send yet — please call (850) 259-2782 or email spankyspw29@gmail.com.</p>
+        <p class="fine">Licensed &amp; insured · Residential and commercial</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <img src="assets/badge.png" width="60" height="60" loading="lazy" alt="">
+        <span><b>Spanky's Pressure Washing</b><span class="sub">Licensed &amp; insured</span></span>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="f-list">
+          <li><a href="tel:+18502592782">(850) 259-2782</a></li>
+          <li><a href="mailto:spankyspw29@gmail.com">spankyspw29@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/p/Spankys-Pressure-Washing-100057068036040/" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <ul class="f-list">
+          <li>29 Turkey Trot Rd, Holt, FL 32564</li>
+          <li>Holt &amp; Crestview, FL</li>
+          <li>Okaloosa, Santa Rosa, Escambia<br>&amp; Walton counties</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© <span id="yr">2026</span> Spanky's Pressure Washing · Residential and commercial</span>
+      <span>Preview designed by Pickr Media</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="c1" href="tel:+18502592782"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>Call</a>
+  <a class="c2" href="#quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 12 22l-9-9V4.4C3 3.6 3.6 3 4.4 3H13l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="8" cy="8" r="1.2"/></svg>Free estimate</a>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){
+    var open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });
+  n.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+
+  var els=document.querySelectorAll('[data-reveal]');
+  if(!window.IntersectionObserver||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in');});
+  }else{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{rootMargin:'0px 0px -12% 0px',threshold:.06});
+    els.forEach(function(e){io.observe(e);});
+  }
+
+  var f=document.querySelector('form[data-form="quote"]');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.website.value)return;
+    if(f.getAttribute('action')==='#'){f.querySelector('.sent').style.display='block';return;}
+    f.submit();
+  });
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Spanky's Pressure Washing",
+  "description":"Spanky's Pressure Washing washes mostly residential houses, driveways, pool decks, pool enclosures, gutters and some roofs, plus commercial buildings, from Holt, Florida.",
+  "image":"assets/og.jpg",
+  "logo":"assets/badge.png",
+  "telephone":"+1-850-259-2782",
+  "email":"spankyspw29@gmail.com",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"29 Turkey Trot Rd",
+    "addressLocality":"Holt",
+    "addressRegion":"FL",
+    "postalCode":"32564",
+    "addressCountry":"US"
+  },
+  "areaServed":[
+    {"@type":"City","name":"Holt, FL"},
+    {"@type":"City","name":"Crestview, FL"},
+    {"@type":"AdministrativeArea","name":"Okaloosa County"},
+    {"@type":"AdministrativeArea","name":"Santa Rosa County"},
+    {"@type":"AdministrativeArea","name":"Escambia County"},
+    {"@type":"AdministrativeArea","name":"Walton County"}
+  ],
+  "sameAs":["https://www.facebook.com/p/Spankys-Pressure-Washing-100057068036040/"],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Pressure washing services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"House washing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Driveways"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pool decks"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pool enclosures"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gutter cleaning"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof washing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial buildings"}}
+    ]
+  }
+}
+</script>
+
+</body>
+</html>

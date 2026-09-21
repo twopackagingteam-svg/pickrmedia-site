@@ -1,0 +1,32 @@
+# Pickr Media
+
+> Pickr Media designs, builds and hosts websites for local service businesses in the United States (plumbing, heating and air, electrical, roofing, landscaping, tree service, cleaning, auto repair and similar trades). Its model is "preview first": the complete website is built before the business pays anything, and the business pays only if it wants to keep the site.
+
+## How it works
+1. The business sends its name and a link to its Google listing, Facebook page or current site (about a minute).
+2. Pickr Media builds a complete, working website using the business's real logo, services, hours, service area and phone number, and delivers it as a private link, usually the same day.
+3. If the business wants it, it picks a plan and the site goes live on its own domain. If not, the preview is taken down and nothing is owed.
+
+## Pricing
+- Pay monthly: $0 build fee, $79 per month including hosting, security and updates. Cancel anytime; the site comes down on cancel. The site is the client's to keep after 12 paid months.
+- Own it: $495 once, then $29 per month for hosting and updates. The design and content belong to the client from day one; the client can stop hosting anytime and take the site files.
+- The preview is free on both plans. Larger work (online booking, multi-location sites) is quoted before anything is built.
+
+## What every site includes
+- Mobile-first design with tap-to-call on every screen
+- Local business structured data (name, trade, hours, phone, service area) and fast load times
+- Hosting, SSL and connection of the client's own domain
+- Updates by email (text, hours, phone, photos, services) within 2 business days
+
+## Content policy
+Pickr Media publishes only what a business already says about itself. It does not invent reviews, guarantees, licenses, awards or years in business. Previews built from public information are unlisted, hidden from search engines, and removed the same day on request.
+
+## Contact
+- Email: hello@pickrmedia.com
+- Request a free preview: https://pickrmedia.com/#start
+- Sample designs: https://pickrmedia.com/#work
+
+## Policies
+- Terms: https://pickrmedia.com/terms/
+- Privacy: https://pickrmedia.com/privacy/
+- Client agreement: https://pickrmedia.com/agreement/

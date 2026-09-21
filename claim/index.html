@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Make it yours — Pickr Media</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .claim { padding: 56px 0 96px; }
+  .claim h1 { font-size: clamp(36px, 6.4vw, 60px); }
+  .claim .lede { max-width: 38em; }
+  .claim__preview { margin-top: 28px; display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; border: 1px solid var(--line); border-radius: 999px; background: #fff; font-weight: 600; text-decoration: none; }
+  .claim__preview[hidden] { display: none; }
+  .claim .plans { margin-top: 44px; }
+  .claim .plan { border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .claim .plan--alt { border-color: transparent; }
+  .next { margin-top: 64px; }
+  .next ol { counter-reset: n; display: grid; gap: 14px; margin-top: 22px; max-width: 44em; }
+  .next li { counter-increment: n; padding-left: 46px; position: relative; color: var(--ink-2); }
+  .next li::before { content: counter(n); position: absolute; left: 0; top: -2px; width: 30px; height: 30px; border-radius: 50%; background: var(--blue-soft); color: var(--blue); font: 800 14px/30px var(--display); text-align: center; }
+  .claim__fine { margin-top: 36px; color: var(--muted); font-size: 15px; max-width: 46em; }
+  .claim__fine a { color: var(--blue); }
+
+  /* Proof sits ABOVE the price: a cold-emailed stranger asks "is this real?" before "how much?". */
+  .builtby { margin-top: 40px; }
+  .builtby__label { color: var(--muted); font-size: 14px; font-weight: 600; letter-spacing: .02em; }
+  .builtby__strip { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+  .builtby__strip figure { margin: 0; }
+  .builtby__strip img { width: 100%; aspect-ratio: 16 / 11; object-fit: cover; object-position: top center; border-radius: 10px; border: 1px solid var(--line); display: block; }
+  .builtby__strip figcaption { margin-top: 7px; font-size: 13px; color: var(--muted); }
+
+  /* Objection handling AFTER the price. */
+  .reassure { margin-top: 56px; display: grid; gap: 18px; grid-template-columns: 1.35fr 1fr; align-items: start; }
+  @media (max-width: 820px) { .reassure { grid-template-columns: 1fr; } }
+  .reassure__card { border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; background: #fff; }
+  .reassure__card h3 { margin: 0 0 8px; font-size: 19px; }
+  .reassure__card p { margin: 0 0 10px; color: var(--ink-2); font-size: 15.5px; }
+  .reassure__card p:last-child { margin-bottom: 0; }
+  .reassure__talk { background: var(--blue-soft); border-color: transparent; }
+  .reassure__talk .btn { margin-top: 14px; }
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav__in">
+  <a class="mark" href="/" aria-label="Pickr Media home">Pick<span>r</span><em>Media</em></a>
+  <a class="btn btn--sm" href="mailto:hello@pickrmedia.com">Email us</a>
+</div></header>
+
+<main class="claim"><div class="wrap">
+  <p class="kicker">Make it yours</p>
+  <h1>Like what you saw? <i>Put it live.</i></h1>
+  <p class="lede">Pick how you'd like to pay. Once checkout is done we email you within one business day to confirm your details and get the site onto your domain.</p>
+  <a class="claim__preview" id="preview-link" href="#" hidden><span class="dot"></span> <span id="preview-label">Open your preview again</span> →</a>
+
+  <section class="builtby" aria-labelledby="builtby-h">
+    <p class="builtby__label" id="builtby-h">Other sites we've designed and built</p>
+    <div class="builtby__strip">
+      <figure><img src="/assets/work/wahlair-demo.jpg" alt="Wahl Air website designed and built by Pickr Media" width="1280" height="800" loading="lazy" decoding="async"><figcaption>Wahl Air — heating &amp; air</figcaption></figure>
+      <figure><img src="/assets/work/csa.jpg" alt="CSA website designed and built by Pickr Media" width="1280" height="800" loading="lazy" decoding="async"><figcaption>CSA — contracting</figcaption></figure>
+      <figure><img src="/assets/work/twopackaging.jpg" alt="TWO Packaging website designed and built by Pickr Media" width="1280" height="800" loading="lazy" decoding="async"><figcaption>TWO Packaging — manufacturing</figcaption></figure>
+      <figure><img src="/assets/work/twoform.jpg" alt="TWOFORM website designed and built by Pickr Media" width="1280" height="800" loading="lazy" decoding="async"><figcaption>TWOFORM — software</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="plans">
+    <article class="plan">
+      <h3>Pay monthly</h3>
+      <p class="plan__for">Nothing up front.</p>
+      <p class="price"><span>$79</span> / month</p>
+      <p class="plan__fine">$0 build fee</p>
+      <ul>
+        <li>Your site, live on your domain</li>
+        <li>Hosting, security and updates included</li>
+        <li>Cancel anytime. The site comes down when you do.</li>
+        <li>Yours to keep after 12 paid months</li>
+      </ul>
+      <a class="btn btn--lg btn--block" data-plan="monthly" href="https://buy.stripe.com/aFa8wH8cVfZ999k6ae83C03">Choose Pay monthly</a>
+    </article>
+    <article class="plan plan--alt">
+      <h3>Own it</h3>
+      <p class="plan__for">Lowest cost over time.</p>
+      <p class="price"><span>$495</span> once</p>
+      <p class="plan__fine">then $29 / month for hosting and updates</p>
+      <ul>
+        <li>Your site, live on your domain</li>
+        <li>The design and content are yours from day one</li>
+        <li>Hosting, security and updates included</li>
+        <li>Stop hosting anytime and take your files</li>
+      </ul>
+      <a class="btn btn--lg btn--block btn--ghost" data-plan="own" href="https://buy.stripe.com/aFa9AL3WF14f0COaqu83C04">Choose Own it</a>
+    </article>
+  </div>
+
+  <section class="reassure">
+    <div class="reassure__card">
+      <h3>Why you got this</h3>
+      <p>We found your business online, saw you didn't have a website, and built one so you could look at something real instead of reading a pitch. Nobody gave us your details, and we aren't affiliated with any directory, listing service or anyone else who has contacted you.</p>
+      <p>Nothing happens if you ignore this. Your preview isn't listed anywhere, search engines can't see it, and it comes down on its own if we don't hear from you. If you'd rather it came down today, just say so.</p>
+    </div>
+    <div class="reassure__card reassure__talk">
+      <h3>Rather talk it through first?</h3>
+      <p>You don't have to decide from an email. Reply to the one we sent and we'll answer questions, change anything on the site, or just tell you what it would take. If you'd rather talk on the phone, say so and we'll set up a time.</p>
+      <p>No charge, no obligation.</p>
+      <a class="btn" id="ask-link" href="mailto:hello@pickrmedia.com?subject=A%20question%20about%20my%20website">Ask a question</a>
+    </div>
+  </section>
+
+  <section class="next" aria-labelledby="next-h">
+    <h2 id="next-h">What happens next</h2>
+    <ol>
+      <li>You check out securely with Stripe. We never see your card number.</li>
+      <li>We email you to confirm every detail on the site is correct and ask for anything you'd like changed or added.</li>
+      <li>We send plain-English instructions for pointing your domain at the site, or help you register one in your own name.</li>
+      <li>We check the live site on phone and desktop, then tell you it's up.</li>
+    </ol>
+  </section>
+
+  <p class="claim__fine">By checking out you accept the <a href="/agreement/">Client Agreement</a>. Want something changed before you decide, or not interested and want the preview removed? Email <a href="mailto:hello@pickrmedia.com">hello@pickrmedia.com</a> and it's handled.</p>
+</div></main>
+
+<footer class="foot"><div class="wrap foot__in">
+  <a class="mark" href="/">Pick<span>r</span><em>Media</em></a>
+  <nav aria-label="Footer"><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="/agreement/">Client agreement</a><a href="mailto:hello@pickrmedia.com">hello@pickrmedia.com</a></nav>
+  <p class="foot__legal">© 2026 Pickr Media</p>
+</div></footer>
+
+<script>
+(function () {
+  var slug = (new URLSearchParams(location.search).get('site') || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 80);
+  if (slug) {
+    var link = document.getElementById('preview-link');
+    link.href = '/p/' + slug + '/';
+    link.hidden = false;
+    // Carry the slug into the question email too, so a reply tells us which preview it is about.
+    var ask = document.getElementById('ask-link');
+    if (ask) ask.href = 'mailto:hello@pickrmedia.com?subject=' + encodeURIComponent('A question about my website — ' + slug);
+  }
+  [].forEach.call(document.querySelectorAll('[data-plan]'), function (a) {
+    var href = a.getAttribute('href');
+    if (/^https:\/\//.test(href)) {
+      // Stripe Payment Links accept client_reference_id so the payment is tied to the right preview.
+      if (slug) a.href = href + (href.indexOf('?') === -1 ? '?' : '&') + 'client_reference_id=' + encodeURIComponent(slug);
+    } else {
+      var plan = a.getAttribute('data-plan') === 'own' ? 'Own it ($495 + $29/mo)' : 'Pay monthly ($79/mo)';
+      a.href = 'mailto:hello@pickrmedia.com?subject=' + encodeURIComponent('I want to keep my site' + (slug ? ' — ' + slug : '')) + '&body=' + encodeURIComponent('Plan: ' + plan + '\nSite: ' + (slug || '(tell us your business name)') + '\n\nPlease send me the checkout link.');
+    }
+  });
+})();
+</script>
+</body>
+</html>

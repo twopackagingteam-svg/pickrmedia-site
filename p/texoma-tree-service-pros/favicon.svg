@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Texoma Tree Service Pros">
+  <rect width="64" height="64" fill="#12170F"/>
+  <path d="M44 10v44" stroke="#CC804C" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M44 22l4.5 3.5M44 34l4.5 3.5" stroke="#CC804C" stroke-width="2" stroke-linecap="round"/>
+  <text x="19" y="46" font-family="Didot,Bodoni MT,Georgia,serif" font-size="42" font-weight="500" fill="#ADDC64" text-anchor="middle">T</text>
+  <rect x="8" y="51" width="22" height="3" fill="#ADDC64"/>
+</svg>
